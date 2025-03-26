@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         easing: 'ease-out',
     });
 
-    ScrollReveal().reveal('.about__description, .about__img, .service-card, .maxicare-plan, .why-content, .faq-item', {
+    ScrollReveal().reveal('.service-card, .maxicare-plan, .why-content, .faq-item', {
         origin: 'bottom',
         distance: '100px',
         duration: 1200,
@@ -90,6 +90,14 @@ document.addEventListener("DOMContentLoaded", () => {
         distance: '100px',
         duration: 1500,
         delay: 400,
+        easing: 'ease-out',
+    });
+
+    ScrollReveal().reveal('.about__card', {
+        origin: 'left',
+        distance: '150px',
+        duration: 1500,
+        delay: 500,
         easing: 'ease-out',
     });
 
@@ -114,5 +122,18 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             navbar.classList.remove("header--scroll");
         }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const faqItems = document.querySelectorAll(".faq-answer");
+
+    faqItems.forEach(item => {
+        const question = item.querySelector(".faq-question");
+        
+        question.addEventListener("click", function () {
+            // Toggle the active class on the faq-item
+            item.classList.toggle("active");
+        });
     });
 });

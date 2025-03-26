@@ -59,7 +59,7 @@
                         <a href="#services">Services</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#testimonials">Testimonials</a>
+                        <a href="#why-choose">Testimonials</a>
                     </li>
                     <li class="nav__item">
                         <a href="#faq">FAQs</a>
@@ -87,8 +87,9 @@
 <!-- About Section -->
     
     <section id="about" class="section">
+       <h1>Discover InsuranceGuyPH</h1>
         <div class="about__description">
-            <h2>About Me</h2>
+            
             <div class="about__card">
                 <h3>Goal:</h3>
                 <p>
@@ -114,14 +115,11 @@
                 </p>
             </div>    
         </div>
-        <div class="about__img">
-            <img src="resources\insuranceguyph.png" alt="Gabino Cunada" class="about-image">
-        </div>   
     </section>
 
 <!-- Services Section -->
 <section id="services" class="section">
-    <h2>How I Can Help You</h2>
+    <h1>How I Can Help You</h1>
     <h3>FOR INDIVIDUALS AND FAMILIES:</h3>
     <div class="service-slide">
         <div class="service-cards">
@@ -198,11 +196,12 @@
 
 <!-- Maxicare Products Section -->
     <section id="maxicare" class="section">
-        <h2>Maxicare Plans</h2>
+        <h1>Maxicare Plans</h1>
+        <div class="maxicare-container">
         <div class="maxicare-plans">
             <div class="maxicare-plan">
                 <img src="resources\services\2.png">
-                <h3>PRIMA GOLD</h3>
+                <h3>Prima Gold</h3>
                 <p>
                     Unlimited access to over 800 prescribed lab tests, diagnostics, and 
                     consultations in all Maxicare Primary Care Clinics (PCCs) for 
@@ -227,6 +226,7 @@
                 </p>
                 <p><strong>₱6,999</strong></p>
             </div>
+        </div>|
         </div>
         <a 
             href="https://shop.maxicare.com.ph/?maxi-link=Z2FiaW5vbWF4aWNhcmU=" 
@@ -237,9 +237,8 @@
         </a>
     </section>
 
-<!--Why Choose Me Section-->
-    <section id="why-choose" class="section">
-        <h2>Why Choose Me?</h2>
+    <!-- <section id="why-choose" class="section">
+        <h1>Why Choose Me?</h1>
         <div class="why-content">
             <ul>
                 <li>
@@ -262,10 +261,9 @@
         </div>
     </section>
 
-<!-- Testimonials Section -->
     <section id="testimonials" class="section">
         <div class="testimonial__title">
-            <h2>What My Client Say</h2>
+            <h1>What My Client Say</h1>
         </div>
         <div class="testimonial__wrapper swiper-container">
             <div class="swiper-wrapper">
@@ -301,11 +299,8 @@
         </div>
     </section>
     
-
-
-<!-- FAQs Section -->
     <section id="faq" class="section">
-        <h2>Frequently Asked Questions</h2>
+        <h1>Frequently Asked Questions</h1>
         <div class="faq">
             <div class="faq-item">
                 <p>
@@ -351,46 +346,154 @@
                 </p>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    
+    <section id="why-choose" class="section">
+    <div class="why-container">
+        <!-- Why Choose Me Section -->
+        <div class="why-choose">
+            <h1>Why Choose Me?</h1>
+            <div class="why-content">
+                <ul class="why-list">
+                    <li>
+                        <i class="fas fa-cogs"></i>
+                        <strong>Tailored Solutions for Individuals & Companies</strong> – Get a personalized financial or corporate benefits plan based on your needs.
+                    </li>
+                    <li>
+                        <i class="fas fa-handshake"></i>
+                        <strong>Transparent & Trusted Advice</strong> – No hidden fees, just honest guidance.
+                    </li>
+                    <li>
+                        <i class="fas fa-briefcase"></i>
+                        <strong>Proven Expertise in Personal & Corporate Finance</strong> – Years of experience helping Filipinos and businesses secure their financial future.
+                    </li>
+                    <li>
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <strong>Educational Content</strong> – Follow me on social media for valuable financial tips & business insights.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="testimonials">
+            <h2>What My Clients Say</h2>
+            <div class="testimonial__wrapper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="testimonial swiper-slide">
+                        <p>
+                            <i class="fas fa-quote-left"></i> 
+                            " ⭐️⭐️⭐️⭐️⭐️ Gabino helped me set up my insurance and investment plan. Now, I feel more secure about my future!" 
+                            <i class="fas fa-quote-right"></i>
+                        </p>
+                        <p>- Anna D.</p>
+                    </div>
+                    <div class="testimonial swiper-slide">
+                        <p>
+                            <i class="fas fa-quote-left"></i> 
+                            " ⭐️⭐️⭐️⭐️⭐️ We were looking for a cost-effective HMO for our employees. Gabino provided us with the best options—great coverage at an affordable price!" 
+                            <i class="fas fa-quote-right"></i>
+                        </p>
+                        <p>- HR Manager, ABC Corp</p>
+                    </div>
+                    <div class="testimonial swiper-slide">
+                        <p>
+                            <i class="fas fa-quote-left"></i> 
+                            "⭐️⭐️⭐️⭐️⭐️ I was hesitant about insurance before, but Gabino made everything clear and easy to understand. Best decision I made!" 
+                            <i class="fas fa-quote-right"></i>
+                        </p>
+                        <p>- Jen C</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- FAQs Section -->
+        <div class="faqs">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <p><strong><i class="fas fa-question"></i> I don't know anything about insurance or investments. Can you help me?</strong></p>
+                <p class="faq-answer">✔ Absolutely! I will guide you step by step and explain everything in simple terms.</p>
+            </div>
+            <div class="faq-item">
+                <p><strong><i class="fas fa-question"></i> Is life insurance expensive?</strong></p>
+                <p class="faq-answer">✔ There are plans for every budget! I'll help you find the best coverage based on your financial situation.</p>
+            </div>
+            <div class="faq-item">
+                <p><strong><i class="fas fa-question"></i> What HMO or medical insurance plan is best for my company?</strong></p>
+                <p class="faq-answer">✔ That depends on your budget and employee needs. I'll help you compare different options and choose the best one for your team.</p>
+            </div>
+            <div class="faq-item">
+                <p><strong><i class="fas fa-question"></i> Do you offer financial wellness seminars for companies?</strong></p>
+                <p class="faq-answer">✔ Yes! I can conduct training sessions to educate employees on savings, investments, insurance, and financial planning.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!-- Contact & Consultation Section -->
     <section id="consultation" class="section">
-        <h2>Connect With Me and<br>Get a Personalized Financial or Corporate Benefits Plan!</h2>
-        <p>Get a FREE Financial or Corporate Benefits Consultation today!</p>
-        <a href="https://m.me/assetprotectph" target="blank" class="contact-link">Message Me on Messenger: Click Here</a>
-        <a href="#" target="_blank" class="contact-link"></i>Schedule a Meeting: Book a Consultation</a>
-        <p>Fill out the form below to get a free assessment.</p>        
-        <a href="#" target="_blank" class="contact-link">Sign Up for a FREE Consultation</a>
-        <p>Serving individuals and businesses nationwide in the Philippines!</p>  
+        <div class="consultation-container">
+            <div class="consultation-title">
+                <h2>Connect With Me and<br>
+                Get a Personalized Financial or Corporate Benefits Plan!</h2>
+            </div>
+            <div class="consultation-blog">
+                <div class="blog">
+                    <a target="_blank" href="https://www.youtube.com/@gabinocunada">
+                        <img src="resources/blog/youtube.png">
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/@gabinocunada">YOUTUBE</a>
+                    <p>Sample short description</p>
+                </div>
+                <div class="blog">
+                    <img src="resources/blog/facebook.png" target="_blank" href="https://www.facebook.com/gabinocunadafinancialadvisor">
+                    <a target="_blank" href="https://www.facebook.com/gabinocunadafinancialadvisor">FACEBOOK</a>
+                    <p>Sample short description</p>
+                </div>
+                <div class="blog">
+                    <img src="resources/blog/tiktok.png" target="_blank" href="https://www.tiktok.com/@insurance_guyph">
+                    <a target="_blank" href="https://www.tiktok.com/@insurance_guyph">TIKTOK</a>
+                    <p>Sample short description</p>
+                </div>
+            </div>
+        </div>
+            <div>
+                <p>Get a FREE Financial or Corporate Benefits Consultation today!</p>
+                <a href="https://m.me/assetprotectph" target="blank" class="contact-link">Message Me on Messenger: Click Here</a>
+                <a href="#" target="_blank" class="contact-link"></i>Schedule a Meeting: Book a Consultation</a>
+                <p>Fill out the form below to get a free assessment.</p>        
+                <a href="#" target="_blank" class="contact-link">Sign Up for a FREE Consultation</a>
+                <p>Serving individuals and businesses nationwide in the Philippines!</p>  
+            </div>
+
     </section>
 
 <!-- Footer -->
     <footer>
         <section id="contact" class="footer">
-            <a target="_blank" href="https://www.youtube.com/@gabinocunada" 
+            <!-- <a target="_blank" href="https://www.youtube.com/@gabinocunada" 
                 class="contact-link"
             >
                 <i class="fab fa-youtube"></i> 
                 Youtube
             </a>
             <a target="_blank" href="https://www.facebook.com/gabinocunadafinancialadvisor" 
-                target="_blank" 
                 class="contact-link"
             >
                 <i class="fab fa-facebook"></i> 
                 Facebook
             </a>
             <a target="_blank" href="https://www.tiktok.com/@insurance_guyph" 
-                target="_blank" 
                 class="contact-link"
             >
                 <i class="fab fa-tiktok"></i> 
                 TikTok
-            </a>
+            </a> -->
         </section>
-        <p>&copy; 2025 Gabino Cunada | All Rights Reserved | <img src="favicon.ico"> Powered by Technomancer</p>
+        <p>&copy; 2025 Gabino Cunada | All Rights Reserved | Powered by <a href="https://technomancer.biz/">Technomancer</a><img src="favicon.ico"></p>
     </footer>
 </body>
 
