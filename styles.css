@@ -6,7 +6,7 @@
 }
 
 body {
-	font-family: 'Libre Baskerville';
+	font-family: 'Oswald';
 	background-color: #f4f7fc;
 	color: #333;
 	line-height: 1.6;
@@ -206,7 +206,7 @@ h1 {
 
 #about h1, .about__description {
 	position: relative;
-	left: 20rem;
+	left: 10rem;
 	top: 8rem;
 }
 
@@ -347,8 +347,9 @@ footer img {
 
 /* Maxicare Plans Section */
 #maxicare {
-	background: url('resources/images/background-banner/7.png');
-	background-size: cover;
+	/* background: url('resources/images/background-banner/15.png');
+	background-size: cover; */
+	background-color: rgb(255, 255, 255);
 	height: auto;
 	max-width: 100%;
 	border-radius: 0.5rem; 
@@ -377,26 +378,59 @@ footer img {
 
 .maxicare-plans {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	gap: 1.875rem; /* 30px */
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
 	max-width: 80%;
 }
 
-.maxicare-plan {
-	background-color: rgba(176, 177, 247, 0.5);  /* Blue with 50% opacity */
+.maxicare-plan1, .maxicare-plan2 {
+	background-color: rgba(232, 237, 253, 0.1);  /* Blue with 50% opacity */
 	place-items: center;
 	padding: 1.25rem; /* 20px */
 	border-radius: 0.5rem; /* 8px */
-	box-shadow: 0 0.5rem 0.9375rem rgba(5, 5, 5, 0.5);
+	box-shadow: 0 0.5rem 0.9375rem rgba(5, 5, 5, 0.1);
 	text-align: start;
+	text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+	font-weight: bolder;
 }
 
-.maxicare-plan img {
+.maxicare-plan1 h3 {
+	background: linear-gradient(to right, #a78143, #e2d32d, #d0b870);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.maxicare-plan2 h3 {
+	background: linear-gradient(to right, #ff0000, #474747, #0011ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.maxicare-plans img {
 	background-size: cover;
 	border-radius: 10px;
-	max-width: 100%; /* 160px */
+	max-width: 100%; /* 160psx */
 	height: 25rem;
+	transition: transform 0.3s ease;
+}
+
+.maxicare-plans img:hover {
+	transform: scale(1.02);
+}
+
+.maxicare-plans p {
+	color: rgb(0, 0, 134);
+	box-shadow: 0 0.5rem 0.9375rem rgba(5, 5, 5, 0.1);
+    padding: 1.5rem 0.8rem;
+    border-radius: 10px;
+    font-weight: bolder;
+    line-height: 1.5rem;
+}
+
+.maxicare-plans a {
+	text-decoration: none;
+	text-align: center;
 }
 
 .maxicare-link {
@@ -502,6 +536,18 @@ footer img {
 
 .swiper-pagination {
   margin-top: 20px;
+}
+
+.swiper-user {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+.swiper-user img {
+	max-width: 2rem;
+	border-radius: 1rem;
 }
 
 /* FAQ Section */

@@ -45,7 +45,7 @@
         <div class="nav__container">
             <div id="nav-toggle" class="nav__toggle">
                 <img src="resources/brand.png">
-                <a class="logo">Insurance Guy PH</a>
+                <a class="logo">Insurance GuyPH</a>
             </div>
             <div id="nav-menu" class="nav__menu">
                 <ul class="nav__list">
@@ -87,7 +87,7 @@
 <!-- About Section -->
     
     <section id="about" class="section">
-       <h1>Discover InsuranceGuyPH</h1>
+       <h1>Get to Know InsuranceGuyPH</h1>
         <div class="about__description">
             
             <div class="about__card">
@@ -198,35 +198,32 @@
     <section id="maxicare" class="section">
         <h1>Maxicare Plans</h1>
         <div class="maxicare-container">
-        <div class="maxicare-plans">
-            <div class="maxicare-plan">
-                <img src="resources\services\2.png">
-                <h3>Prima Gold</h3>
-                <p>
-                    Unlimited access to over 800 prescribed lab tests, diagnostics, and 
-                    consultations in all Maxicare Primary Care Clinics (PCCs) for 
-                    individuals of all ages, including Seniors.
-                </p>
-                <p><strong>₱16,880 (One time payment)</strong></p>
+            <div class="maxicare-plans">
+                <div class="maxicare-plan1">
+                    <a target="_blank" href="https://shop.maxicare.com.ph/collections/prima-prepaid-health-cards-philippines" >
+                        <img src="resources\services\123.png">
+                        <h3>PRIMA GOLD</h3>
+                    </a>
+                    <p>
+                        Unlimited access to over 800 prescribed lab tests, diagnostics, and 
+                        consultations in all Maxicare Primary Care Clinics (PCCs) for 
+                        individuals of all ages, including Seniors.<br>
+                        <strong>₱2,299</strong>
+                    </p>
+                </div>
+                <div class="maxicare-plan2">
+                    <a target="_blank" href="https://shop.maxicare.com.ph/collections/lifesaver">
+                        <img src="resources\services\234.png">
+                        <h3>LifesavER & LifesavER+</h3>
+                    </a>
+                    <p>
+                        LifesavER+ Emergency coverage leading to confinement throughout Maxicare partner hospitals.<br>
+                        LifesavER Outpatient Emergency coverage in Maxicare partner hospitals nationwide.<br>
+                    
+                        <strong>₱6,999</strong>
+                    </p>    
+                </div>
             </div>
-            <div class="maxicare-plan">
-                <img src="resources\services\3.png">
-                <h3>LifesavER</h3>
-                <p>
-                    Outpatient Emergency coverage in Maxicare partner hospitals nationwide.
-                </p>
-                <p><strong>₱2,299</strong></p>
-            </div>
-            <div class="maxicare-plan">
-                <img src="resources\services\4.png">
-                <h3>LifesavER+</h3>
-                <p>
-                    Emergency coverage leading to confinement throughout Maxicare partner 
-                    hospitals.
-                </p>
-                <p><strong>₱6,999</strong></p>
-            </div>
-        </div>|
         </div>
         <a 
             href="https://shop.maxicare.com.ph/?maxi-link=Z2FiaW5vbWF4aWNhcmU=" 
@@ -381,12 +378,17 @@
             <div class="testimonial__wrapper swiper-container">
                 <div class="swiper-wrapper">
                     <div class="testimonial swiper-slide">
-                        <p>
-                            <i class="fas fa-quote-left"></i> 
-                            " ⭐️⭐️⭐️⭐️⭐️ Gabino helped me set up my insurance and investment plan. Now, I feel more secure about my future!" 
-                            <i class="fas fa-quote-right"></i>
-                        </p>
-                        <p>- Anna D.</p>
+                        <div class="swiper-quote">
+                             <p>
+                                <i class="fas fa-quote-left"></i> 
+                                " ⭐️⭐️⭐️⭐️⭐️ Gabino helped me set up my insurance and investment plan. Now, I feel more secure about my future!" 
+                                <i class="fas fa-quote-right"></i>
+                            </p>
+                        </div>
+                        <div class="swiper-user">
+                            <img src="resources/insuranceguy.jpg">
+                            <p>- Anna D.</p>
+                        </div>
                     </div>
                     <div class="testimonial swiper-slide">
                         <p>
