@@ -45,13 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
         centeredSlides: true,
         effect: "coverflow",
         grabCursor: true,
-        slidesPerView: 1,
+        slidesPerView: 2,
         coverflowEffect: {
             rotate: 50,
             stretch: 0,
             depth: 100,
             modifier: 1,
-            slideShadows: true,
         },
         pagination: {
             el: ".swiper-pagination",
@@ -63,6 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 slidesPerView: "auto",
             },
         },
+        autoplay: {
+            delay: 2000, // 2 seconds delay
+            // disableOnInteraction: false, // Keeps autoplay running even after user interacts with the swiper
+        },
+         speed: 2500,
     });
 
     // ==========================
@@ -123,17 +127,26 @@ document.addEventListener("DOMContentLoaded", () => {
             navbar.classList.remove("header--scroll");
         }
     });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-    const faqItems = document.querySelectorAll(".faq-answer");
+    // ==========================
+    // FAQ Accordion
+    // ==========================
+    const faqQuestions = document.querySelectorAll(".faq-question");
 
-    faqItems.forEach(item => {
-        const question = item.querySelector(".faq-question");
-        
-        question.addEventListener("click", function () {
-            // Toggle the active class on the faq-item
-            item.classList.toggle("active");
+    faqQuestions.forEach((faqQuestion) => {
+        faqQuestion.addEventListener("click", function() {
+            const faqAnswer = this.nextElementSibling; // Get the associated answer
+
+            // Toggle the answer visibility
+            faqAnswer.classList.toggle("open");
+
+            // Optionally close all other answers
+            document.querySelectorAll(".faq-answer").forEach((otherAnswer) => {
+                if (otherAnswer !== faqAnswer) {
+                    otherAnswer.classList.remove("open");
+                }
+            });
         });
     });
+    
 });

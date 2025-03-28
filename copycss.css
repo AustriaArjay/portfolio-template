@@ -498,106 +498,180 @@ footer img {
   margin-right: 15px;
 }
 
-/* Testimonials Section */
-.testimonial__wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  overflow: hidden;
+.test {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column in the first row */
+    grid-template-rows: 1fr 1fr; /* 2 rows */
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 2rem;
+}
+
+/* In the second row, we will create 2 columns */
+.test > div:nth-child(2), .test > div:nth-child(3) {
+    grid-column: span 1; /* Each will take 1 column */
+}
+
+.test > div:nth-child(1) {
+    grid-column: 1 / -1; /* Make the first element span across all columns (full width of the first row) */
+}
+
+/* 
+.test {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: ;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 2rem;
+} */
+
+.test h2 {
+    text-align: center;
 }
 
 .testimonials {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  text-align: center;
-  display: block;
-  justify-content: center;
-  align-items: stretch;
+
 }
 
-.swiper-quote {
-	align-self: flex-end;
+.faqs {
+    width: 100%;
+    padding: 2rem;
 }
 
-.testimonial p {
-  font-size: 1.1rem;
-  color: #555;
+.faq-content {
+    background-color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 850px;
+    overflow: none;
 }
 
-.testimonial p:first-child {
-  font-style: italic;
-}
-
-.testimonial p:last-child {
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.swiper-container {
-  display: flex;
-  justify-content: center;
-}
-
-.swiper-pagination {
-  margin-top: 20px;
-}
-
-.swiper-user {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 3rem;
-}
-
-.swiper-user img {
-	max-width: 2rem;
-	border-radius: 1rem;
-}
-
-/* FAQ Section */
 .faq-item {
-  margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
-.faq-item p {
-  font-size: 1.1rem;
-  color: #333;
+.faq-question {
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+    background-color: #f2f2f2;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #ddd;
 }
 
 .faq-answer {
-  font-size: 1rem;
-  color: #666;
-  margin-left: 20px;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    display: none;
+    border-radius: 5px;
 }
 
-.faq-item i {
-  color: #ff6f61;
-  margin-right: 10px;
+.faq-answer.open {
+    display: block;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .why-content li {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .testimonial__wrapper {
-      flex-direction: column;
-  }
-
-  .testimonial {
-      width: 100%;
-  }
+.testimonials, .faqs {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    top: 1rem;
 }
 
-#test {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+.swiper-container {
+    overflow: hidden; /* Prevent extra space after the slides */
+    width: 80%;
+    display: flex;
 }
+
+.swiper-wrapper {
+    display: flex; /* Ensure swiper items are laid out in a row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide { 
+    flex-shrink: 0; /* Prevent shrinking of slides */
+    background-color: rgb(216, 254, 254);
+    border-radius: 20px;
+}
+
+#test h2 {
+    font-size: 3rem;
+}
+
+/* Add smooth transition for sliding */
+.testimonial-container {
+    transition: transform 1s ease-in-out; /* Smooth transition for sliding */
+}
+
+/* Ensure each testimonial is positioned side-by-side */
+.testimonial-slide {
+    display: inline-block; /* Or flex, depending on your layout */
+    width: 100%; /* Or the width of one testimonial */
+}
+
+.testimonial__wrapper p {
+    font-size: 2rem;
+    text-align: left;
+    margin: 2rem;
+}
+
+.testimonial__wrapper {
+    border-radius: 2rem;
+}
+
+.swiper-quote p{
+    background-color: white;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(92, 88, 88, 0.5);
+}
+
+.swiper-pagination {  
+    padding: 1rem;
+}
+
+.swiper-user {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.swiper-user img {
+    width: 10rem;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.swiper-wrapper {
+}
+
+.faqs p {
+    text-align: left;
+}
+
 
 /* Contact Section */
 #consultation {
