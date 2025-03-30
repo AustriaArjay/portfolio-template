@@ -59,10 +59,10 @@
                         <a href="#services">Services</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#why-choose">Testimonials</a>
+                        <a href="#maxicare">Maxicare Plans</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#faq">FAQs</a>
+                        <a href="#">Testimonial</a>
                     </li>
                     <li class="nav__item">
                         <a href="#contact">Contact</a>
@@ -87,39 +87,41 @@
 <!-- About Section -->
     
     <section id="about" class="section">
-       <h1>Get to Know InsuranceGuyPH</h1>
-        <div class="about__description">
-            
-            <div class="about__card">
-                <h3>Goal:</h3>
-                <p>
-                    To become the trusted and go-to expert for health, life, and property insurance, 
-                    delivering exceptional service that makes every client feel valued, prioritized, 
-                    and confident in their financial decisions.
-                </p>
-            </div>
-            <div class="about__card">
-                <h3>Mission:</h3>
-                <p>
-                    To provide consistent, high-quality, and personalized client service, ensuring 
-                    that every individual receives thebest insurance solutions tailored to their unique 
-                    needs and goals.
-                </p>
-            </div>
-            <div class="about__card">
-                <h3>Vision:</h3>
-                <p>
-                    To be recognized as the leading authority and most reliable financial advisor in the 
-                    Philippines for all things insurance-setting the standard for excellence, trust, and 
-                    client satisfaction in the industry.
-                </p>
-            </div>    
+        <div class="about__content">
+            <h1>Get to Know InsuranceGuyPH</h1>
+            <div class="about__description">
+                
+                <div class="about__card">
+                    <h3>Goal:</h3>
+                    <p>
+                        To become the trusted and go-to expert for health, life, and property insurance, 
+                        delivering exceptional service that makes every client feel valued, prioritized, 
+                        and confident in their financial decisions.
+                    </p>
+                </div>
+                <div class="about__card">
+                    <h3>Mission:</h3>
+                    <p>
+                        To provide consistent, high-quality, and personalized client service, ensuring 
+                        that every individual receives thebest insurance solutions tailored to their unique 
+                        needs and goals.
+                    </p>
+                </div>
+                <div class="about__card">
+                    <h3>Vision:</h3>
+                    <p>
+                        To be recognized as the leading authority and most reliable financial advisor in the 
+                        Philippines for all things insurance-setting the standard for excellence, trust, and 
+                        client satisfaction in the industry.
+                    </p>
+                </div>    
+            </div>  
         </div>
     </section>
 
 <!-- Services Section -->
 <section id="services" class="section">
-    <h1>How I Can Help You</h1>
+    <h1>Helping You Every Step of the Way</h1>
     <h3>FOR INDIVIDUALS AND FAMILIES:</h3>
     <div class="service-slide">
         <div class="service-cards">
@@ -208,19 +210,19 @@
                         Unlimited access to over 800 prescribed lab tests, diagnostics, and 
                         consultations in all Maxicare Primary Care Clinics (PCCs) for 
                         individuals of all ages, including Seniors.<br>
-                        <strong>₱2,299</strong>
+                        <strong>₱16,8880 (One time payment)</strong>
                     </p>
                 </div>
                 <div class="maxicare-plan2">
                     <a target="_blank" href="https://shop.maxicare.com.ph/collections/lifesaver">
                         <img src="resources\services\234.png">
-                        <h3>LifesavER & LifesavER+</h3>
+                        <h3>LifesavER+ & LifesavER</h3>
                     </a>
                     <p>
                         LifesavER+ Emergency coverage leading to confinement throughout Maxicare partner hospitals.<br>
                         LifesavER Outpatient Emergency coverage in Maxicare partner hospitals nationwide.<br>
                     
-                        <strong>₱6,999</strong>
+                        <strong>₱6,999 - ₱2,2990    </strong>
                     </p>    
                 </div>
             </div>
@@ -234,272 +236,139 @@
         </a>
     </section>
 
-    <!-- <section id="why-choose" class="section">
-        <h1>Why Choose Me?</h1>
-        <div class="why-content">
-            <ul>
-                <li>
-                    <strong>Tailored Solutions for Individuals & Companies</strong> 
-                    – Get a personalized financial or corporate benefits plan based on your needs.
-                </li>
-                <li>
-                    <strong>Transparent & Trusted Advice</strong> 
-                    – No hidden fees, just honest guidance.
-                </li>
-                <li>
-                    <strong>Proven Expertise in Personal & Corporate Finance</strong> 
-                    – Years of experience helping Filipinos and businesses secure their financial future.
-                </li>
-                <li>
-                    <strong>Educational Content</strong> 
-                    – Follow me on social media for valuable financial tips & business insights.
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="testimonials" class="section">
-        <div class="testimonial__title">
-            <h1>What My Client Say</h1>
-        </div>
-        <div class="testimonial__wrapper swiper-container">
-            <div class="swiper-wrapper">
-                <div class="testimonial swiper-slide">
-                    <p>
-                        <i class="fas fa-quote-left"></i> 
-                        " ⭐️⭐️⭐️⭐️⭐️ Gabino helped me set up my insurance and investment plan. 
-                        Now, I feel more secure about my future!" 
-                        <i class="fas fa-quote-right"></i>
-                    </p>
-                    <p>- Anna D.</p>
-                </div>
-                <div class="testimonial swiper-slide">
-                    <p>
-                        <i class="fas fa-quote-left"></i> 
-                        " ⭐️⭐️⭐️⭐️⭐️ We were looking for a cost-effective HMO for our employees. 
-                        Gabino provided us with the best options—great coverage at an affordable price!" 
-                        <i class="fas fa-quote-right"></i>
-                    </p>
-                    <p>- HR Manager, ABC Corp</p>
-                </div>
-                <div class="testimonial swiper-slide">
-                    <p>
-                        <i class="fas fa-quote-left"></i> 
-                        "⭐️⭐️⭐️⭐️⭐️ I was hesitant about insurance before, but Gabino made everything 
-                        clear and easy to understand. Best decision I made!" 
-                        <i class="fas fa-quote-right"></i>
-                    </p>
-                    <p>- Jen C</p>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-    
-    <section id="faq" class="section">
-        <h1>Frequently Asked Questions</h1>
-        <div class="faq">
-            <div class="faq-item">
-                <p>
-                    <strong><i class="fas fa-question"></i> 
-                    I don't know anything about insurance or investments. Can you help me?
-                    </strong>
-                </p>
-                <p class="faq-answer">
-                    ✔ Absolutely! I will guide you step by step and explain everything in simple terms.
-                </p>
-            </div>
-            <div class="faq-item">
-                <p>
-                    <strong><i class="fas fa-question"></i> 
-                    Is life insurance expensive?
-                    </strong>
-                </p>
-                <p class="faq-answer">
-                    ✔ There are plans for every budget! I'll help you find the best coverage based on your 
-                    financial situation.
-                </p>
-            </div>
-            <div class="faq-item">
-                <p>
-                    <strong><i class="fas fa-question"></i> 
-                    What HMO or medical insurance plan is best for my company?
-                    </strong>
-                </p>
-                <p class="faq-answer">
-                    ✔ That depends on your budget and employee needs. I'll help you compare different options 
-                    and choose the best one for your team.
-                </p>
-            </div>
-            <div class="faq-item">
-                <p>
-                    <strong><i class="fas fa-question"></i> 
-                    Do you offer financial wellness seminars for companies?
-                    </strong>
-                </p>
-                <p class="faq-answer">
-                    ✔ Yes! I can conduct training sessions to educate employees on savings, investments, insurance, 
-                    and financial planning.
-                </p>
-            </div>
-        </div>
-    </section> -->
-<!-- 
-    <section id="why-choose" class="section">
-    <div class="why-container">
-        <div class="why-choose">
-            <h1>Why Choose Me?</h1>
-            <div class="why-content">
-                <ul class="why-list">
-                    <li>
-                        <i class="fas fa-cogs"></i>
-                        <strong>Tailored Solutions for Individuals & Companies</strong> – Get a personalized financial or corporate benefits plan based on your needs.
-                    </li>
-                    <li>
-                        <i class="fas fa-handshake"></i>
-                        <strong>Transparent & Trusted Advice</strong> – No hidden fees, just honest guidance.
-                    </li>
-                    <li>
-                        <i class="fas fa-briefcase"></i>
-                        <strong>Proven Expertise in Personal & Corporate Finance</strong> – Years of experience helping Filipinos and businesses secure their financial future.
-                    </li>
-                    <li>
-                        <i class="fas fa-chalkboard-teacher"></i>
-                        <strong>Educational Content</strong> – Follow me on social media for valuable financial tips & business insights.
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    </section> -->
-
-<section id="test" class="test">
-        <!-- Testimonials Section -->
-
+    <section id="test" class="section">
         <div class="why-container">
-        <div class="why-choose">
-            <h1>Why Choose Me?</h1>
-            <div class="why-content">
-                <ul class="why-list">
-                    <li>
+                <h1>Why Choose Me?</h1>
+                <div class="why-content">
+                    <div class="why-card">
                         <i class="fas fa-cogs"></i>
-                        <strong>Tailored Solutions for Individuals & Companies</strong> – Get a personalized financial or corporate benefits plan based on your needs.
-                    </li>
-                    <li>
+                        <p>
+                        <strong>Tailored Solutions for Individuals & Companies</strong><br>
+                        Get a personalized financial or corporate benefits plan based on your needs.
+                        </p>
+                    </div>
+                    <div class="why-card">
                         <i class="fas fa-handshake"></i>
-                        <strong>Transparent & Trusted Advice</strong> – No hidden fees, just honest guidance.
-                    </li>
-                    <li>
+                        <p>
+                            <strong>Transparent & Trusted Advice</strong><br>
+                            No hidden fees, just honest guidance.
+                        </p>
+                    </div>
+                    <div class="why-card">
                         <i class="fas fa-briefcase"></i>
-                        <strong>Proven Expertise in Personal & Corporate Finance</strong> – Years of experience helping Filipinos and businesses secure their financial future.
-                    </li>
-                    <li>
+                        <p>
+                            <strong>Proven Expertise in Personal & Corporate Finance</strong><br>
+                            –Years of experience helping Filipinos and businesses secure their financial future.
+                        </p>
+                    </div>
+                    <div class="why-card">
                         <i class="fas fa-chalkboard-teacher"></i>
-                        <strong>Educational Content</strong> – Follow me on social media for valuable financial tips & business insights.
-                    </li>
-                </ul>
-            </div>
+                        <p>
+                            <strong>Educational Content</strong><br>
+                            Follow me on social media for valuable financial tips & business insights.
+                        </p>
+                    </div>
+                </div>
         </div>
-    </div>
-
         <div class="testimonials">
             <h2>What My Clients Say</h2>
             <div class="testimonial__wrapper swiper-container">
                 <div class="swiper-wrapper">
+
                     <div class="testimonial swiper-slide">
-                        <div class="swiper-quote">
-                             <p>
+                    <div class="swiper-quote">
+                        <div class="swiper-user">
+                            <div>
+                                <img src="resources/profile1.jpeg">
+                            </div>
+                            <div>
+                                <p> Anna D. </p>
+                                <span> Human Resource </span>
+                            </div>
+                            </div>
+                            <p>⭐️⭐️⭐️⭐️⭐️ </p>
+                            <p>    
                                 <i class="fas fa-quote-left"></i> 
-                                " ⭐️⭐️⭐️⭐️⭐️ Gabino helped me set up my insurance and investment plan. Now, I feel more secure about my future!" 
+                                Gabino helped me set up my insurance and investment plan. Now, I feel more secure
+                                about my future!
                                 <i class="fas fa-quote-right"></i>
                             </p>
-                            <div class="swiper-user">
-                                <img src="resources/insuranceguy.jpg">
-                                <a>- Anna D.</a>
-                            </div>
                         </div>
+                    </div>
 
-                    </div>
                     <div class="testimonial swiper-slide">
-                        <div class="swiper-quote">
-                        <p>
-                            <i class="fas fa-quote-left"></i> 
-                            " ⭐️⭐️⭐️⭐️⭐️ We were looking for a cost-effective HMO for our employees. Gabino provided us with the best options—great coverage at an affordable price!" 
-                            <i class="fas fa-quote-right"></i>
-                        </p>
+                    <div class="swiper-quote">
                         <div class="swiper-user">
-                                <img src="resources/insuranceguy.jpg">
-                                <a>- HR Manager, ABC Corp</a>
-                        </div>
+                            <div>
+                                <img src="resources/profile2.jpeg">
+                            </div>
+                            <div>
+                                <p> ABC Corp</p>
+                                <span> HR Manager </span>
+                            </div>
+                            </div>
+                            <p>⭐️⭐️⭐️⭐️⭐️ </p>
+                            <p>    
+                                <i class="fas fa-quote-left"></i> 
+                                We were looking for a cost-effective HMO for our employees. Gabino provided us with 
+                                the best options—great coverage at an affordable price!
+                                <i class="fas fa-quote-right"></i>
+                            </p>
                         </div>
                     </div>
+
                     <div class="testimonial swiper-slide">
-                        <div class="swiper-quote">
-                        <p>
-                            <i class="fas fa-quote-left"></i> 
-                            "⭐️⭐️⭐️⭐️⭐️ I was hesitant about insurance before, but Gabino made everything clear and easy to understand. Best decision I made!" 
-                            <i class="fas fa-quote-right"></i>
-                        </p>
+                    <div class="swiper-quote">
                         <div class="swiper-user">
-                            <img src="resources/insuranceguy.jpg">
-                            <a>- Jen C.</a>
+                            <div>
+                                <img src="resources/profile3.jpeg">
+                            </div>
+                            <div>
+                                <p> Jen C. </p>
+                                <span> Human Resource </span>
+                            </div>
+                            </div>
+                            <p>⭐️⭐️⭐️⭐️⭐️ </p>
+                            <p>    
+                                <i class="fas fa-quote-left"></i> 
+                                I was hesitant about insurance before, but Gabino made 
+                                everything clear and easy to understand. Best decision I made!
+                                <i class="fas fa-quote-right"></i>
+                            </p>
                         </div>
                     </div>
-                </div>
                 
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
-        </div>
         </div>
 
 
         <!-- FAQs Section -->
-        <!-- <div class="faqs">
+        <div class="faqs">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-content">
                 <div class="faq-item">
-                    <p><strong><i class="fas fa-question"></i> I don't know anything about insurance or investments. Can you help me?</strong></p>
+                    <button class="faq-question"><i class="fas fa-question"></i> I don't know anything about insurance or investments. Can you help me?</button>
                     <p class="faq-answer">✔ Absolutely! I will guide you step by step and explain everything in simple terms.</p>
                 </div>
                 <div class="faq-item">
-                    <p><strong><i class="fas fa-question"></i> Is life insurance expensive?</strong></p>
+                    <button class="faq-question"><i class="fas fa-question"></i> Is life insurance expensive?</button>
                     <p class="faq-answer">✔ There are plans for every budget! I'll help you find the best coverage based on your financial situation.</p>
                 </div>
                 <div class="faq-item">
-                    <p><strong><i class="fas fa-question"></i> What HMO or medical insurance plan is best for my company?</strong></p>
+                    <button class="faq-question"><i class="fas fa-question"></i> What HMO or medical insurance plan is best for my company?</button>
                     <p class="faq-answer">✔ That depends on your budget and employee needs. I'll help you compare different options and choose the best one for your team.</p>
                 </div>
                 <div class="faq-item">
-                    <p><strong><i class="fas fa-question"></i> Do you offer financial wellness seminars for companies?</strong></p>
+                    <button class="faq-question"><i class="fas fa-question"></i> Do you offer financial wellness seminars for companies?</button>
                     <p class="faq-answer">✔ Yes! I can conduct training sessions to educate employees on savings, investments, insurance, and financial planning.</p>
                 </div>
             </div>
-        </div> -->
-        <div class="faqs">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-content">
-        <div class="faq-item">
-            <button class="faq-question"><i class="fas fa-question"></i> I don't know anything about insurance or investments. Can you help me?</button>
-            <p class="faq-answer">✔ Absolutely! I will guide you step by step and explain everything in simple terms.</p>
         </div>
-        <div class="faq-item">
-            <button class="faq-question"><i class="fas fa-question"></i> Is life insurance expensive?</button>
-            <p class="faq-answer">✔ There are plans for every budget! I'll help you find the best coverage based on your financial situation.</p>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question"><i class="fas fa-question"></i> What HMO or medical insurance plan is best for my company?</button>
-            <p class="faq-answer">✔ That depends on your budget and employee needs. I'll help you compare different options and choose the best one for your team.</p>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question"><i class="fas fa-question"></i> Do you offer financial wellness seminars for companies?</button>
-            <p class="faq-answer">✔ Yes! I can conduct training sessions to educate employees on savings, investments, insurance, and financial planning.</p>
-        </div>
-    </div>
-</div>
+    </section>
 
-</section>
-
-<!-- Contact & Consultation Section -->
+    <section class="consultation" id="consultation">
         <div class="consultation-container">
             <div class="consultation-title">
                 <h2>Connect With Me and<br>
@@ -525,14 +394,17 @@
                 </div>
             </div>
         </div>
-            <div>
-                <p>Get a FREE Financial or Corporate Benefits Consultation today!</p>
-                <a href="https://m.me/assetprotectph" target="blank" class="contact-link">Message Me on Messenger: Click Here</a>
-                <a href="#" target="_blank" class="contact-link"></i>Schedule a Meeting: Book a Consultation</a>
-                <p>Fill out the form below to get a free assessment.</p>        
-                <a href="#" target="_blank" class="contact-link">Sign Up for a FREE Consultation</a>
-                <p>Serving individuals and businesses nationwide in the Philippines!</p>  
-            </div>
+        <div>
+            <p>Get a FREE Financial or Corporate Benefits Consultation today!</p>
+            <a href="https://m.me/assetprotectph" target="blank" class="contact-link">Message Me on Messenger: Click Here</a>
+            <a href="#" target="_blank" class="contact-link"></i>Schedule a Meeting: Book a Consultation</a>
+            <p>Fill out the form below to get a free assessment.</p>        
+            <a href="#" target="_blank" class="contact-link">Sign Up for a FREE Consultation</a>
+            <p>Serving individuals and businesses nationwide in the Philippines!</p>  
+        </div>
+</section>
+<!-- Contact & Consultation Section -->
+
 <!-- Footer -->
     <footer>
         <section id="contact" class="footer">
@@ -555,7 +427,7 @@
                 TikTok
             </a> -->
         </section>
-        <p>&copy; 2025 Gabino Cunada | All Rights Reserved | Powered by <a href="https://technomancer.biz/">Technomancer</a><img src="favicon.ico"></p>
+        <p>&copy; 2025 Gabino Cunada | All Rights Reserved | Powered by <a target="_blank" href="https://technomancer.biz/">Technomancer</a><img src="favicon.ico"></p>
     </footer>
 </body>
 
