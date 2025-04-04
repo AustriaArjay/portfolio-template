@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ==========================
     // ScrollReveal.js Initialization for Animations
     // ==========================
-    ScrollReveal().reveal('.hero', {
+    ScrollReveal().reveal('.home', {
         origin: 'top',
         distance: '100px',
         duration: 1200,
@@ -80,28 +80,28 @@ document.addEventListener("DOMContentLoaded", () => {
         easing: 'ease-out',
     });
 
-    ScrollReveal().reveal('.service-card, .maxicare-plan2, .maxicare-plan1, .why-content, .faq-item', {
+    ScrollReveal().reveal('.maxicare-plan2, .maxicare-plan1, .why-content, .faq-item, .card-middle, .consultation-container', {
         origin: 'bottom',
         distance: '100px',
         duration: 1200,
-        delay: 400,
+        delay: 300,
         easing: 'ease-out',
-        interval: 200
+        interval: 200,
     });
 
-    ScrollReveal().reveal('.testimonial__wrapper', {
+    ScrollReveal().reveal('.testimonial__wrapper, .card-right', {
         origin: 'right',
         distance: '100px',
         duration: 1500,
-        delay: 400,
+        delay: 300,
         easing: 'ease-out',
     });
 
-    ScrollReveal().reveal('.about__card', {
+    ScrollReveal().reveal('.about__card, .card-left', {
         origin: 'left',
         distance: '150px',
         duration: 1500,
-        delay: 500,
+        delay: 300,
         easing: 'ease-out',
     });
 
