@@ -75,13 +75,33 @@
 
     <!-- home Section -->
     <header id="home" class="home">
-        <div class="home-content">
-            <h1>Secure Your Future with <br>Gabino Cunada</h1>
-            <p>
-                Trusted Financial Advisor | Helping Filipinos & 
-                <br>Businesses Build Wealth & Protection
-            </p>
-            <a href="#footer">Get a Free Consultation</a>
+        <div class="home-carousel">
+            <div class="inner-carousel">
+                <!-- Carousel Items -->
+                <div class="carousel-item" id="item1" style="background-image: url('resources/backgrounds/3.png');">
+                    <div class="carousel-caption1">
+                        <h1>Secure Your Future with <br>Gabino Cunada</h1>
+                        <p>
+                            Trusted Financial Advisor | Helping Filipinos & 
+                            <br>Businesses Build Wealth & Protection
+                        </p>
+                        <a href="#footer"><i class="fa-brands fa-get-pocket"></i> Get a Free Consultation</a>
+                    </div>
+                </div>
+                <div class="carousel-item" id="item2" style="background-image: url('resources/backgrounds/2.png');">
+                    <div class="carousel-caption2">
+                        <h1>Mission<br>Gabino Cunada</h1>
+                        <p>
+                            Trusted Financial Advisor | Helping Filipinos & 
+                            <br>Businesses Build Wealth & Protection
+                        </p>
+                        <a href="#footer"><i class="fa-brands fa-get-pocket"></i> Get a Free Consultation</a>
+                    </div>
+                </div>
+                <!-- Carousel Navigation Buttons -->
+                <button class="carousel-control-prev" id="prevBtn">←</button>
+                <button class="carousel-control-next" id="nextBtn">→</button>
+            </div>
         </div>
     </header>
 

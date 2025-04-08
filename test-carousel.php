@@ -98,26 +98,6 @@
                     <a href="#footer">Get a Free Consultation</a>
                 </div>
             </div>
-            <div class="carousel-item" id="item3" style="background-image: url('resources/images/background-banner/4.png');">
-                <div class="carousel-caption3">
-                    <h1>Vision <br>Gabino Cunada</h1>
-                    <p>
-                        Trusted Financial Advisor | Helping Filipinos & 
-                        <br>Businesses Build Wealth & Protection
-                    </p>
-                    <a href="#footer">Get a Free Consultation</a>
-                </div>
-            </div>
-            <div class="carousel-item" id="item4" style="background-image: url('resources/images/background-banner/9.png');">
-                <div class="carousel-caption4">
-                    <h1>Vision <br>Gabino Cunada</h1>
-                    <p>
-                        Trusted Financial Advisor | Helping Filipinos & 
-                        <br>Businesses Build Wealth & Protection
-                    </p>
-                    <a href="#footer">Get a Free Consultation</a>
-                </div>
-            </div>
             <!-- Carousel Navigation Buttons -->
             <button class="carousel-control-prev" id="prevBtn">←</button>
             <button class="carousel-control-next" id="nextBtn">→</button>
