@@ -41,16 +41,18 @@ nav__menu--open {
     position: absolute;
     width: 100%;
     opacity: 0;
-    transition: opacity 1s ease-in-out; /* Fade transition */
+	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out
 }
 
 .carousel-item.active {
+	transform: translateX(0);
     display: block;
     opacity: 1; /* Make the active item visible */
 }
 
 .carousel-item.inactive {
     display: none;
+	transform: translateX(100%);
 }
 
 /* Carousel Navigation Buttons */
@@ -207,6 +209,11 @@ h1 {
 	padding: 0.5rem 1rem;
 }
 
+.about__content {
+	position: relative;
+	left: 64px;
+}
+
 .about__description {
 	display: block;
 	flex-wrap: wrap;
@@ -249,7 +256,6 @@ h1 {
 
 .service-card {
 	background: #fff;
-	border-radius: 20px;
 	width: 26.25rem;
 	box-shadow: 0 0.5rem 0.9375rem rgba(0, 0, 0, 0.1); 
 	text-align: center;
@@ -275,10 +281,8 @@ h1 {
 }
 
 .service-card img {
-	border-radius: 20px;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 	background-size: cover;
-	border-radius: 20px;
 	width: 100%;
 	max-height: 100%;
 	object-fit: cover;
@@ -290,19 +294,10 @@ h1 {
 }
 
 footer {
+	height: 300px;
 	background-color: #000957;
 	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	padding: 1rem 10rem 1rem 10rem;	
-}
-
-footer p {
-	font-size: 0.9rem;
-	text-decoration: none;
-	color: white;
+	padding: 3rem 10rem;
 }
 
 footer a {
@@ -310,8 +305,46 @@ footer a {
 	color: white;
 }
 
-footer img {
-	height: auto;
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+	gap: 10rem;
+}
+
+.left-footer {
+	line-height: 2rem;
+}
+
+.footer-blogs {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	gap: 2rem;
+}
+
+.footer-icon {
+	display: flex;
+	align-items: center;
+}
+
+.left-footer span {
+	font-size: 2rem;
+}
+
+.middle-footer {
+	display: flex;
+}
+
+.middle-footer ul {
+	list-style: none;
+	margin-right: 20rem;
+}
+
+.right-footer {
+	align-self: flex-end;
 }
 
 @media (max-width: 48em) { 
@@ -447,7 +480,7 @@ footer img {
 	border: 0.125rem solid #000957; 
 	padding: 0.625rem 1.25rem; 
 	border-radius: 20px;
-	transition: background-color 0.3s ease, color 0.3s ease;
+	transition: background-color 1s ease, color 3s ease;
 }
 
 .maxicare-link:hover {
@@ -493,7 +526,16 @@ footer img {
 }
 
 .why-card:hover {
+	background: url('resources/backgrounds/5.png');
+	font-size: 50%;
+	color: white;
+	background-size: cover;
 	transform: scale(1.05);
+	transition: transform 0.5s ease ease-out , box-shadow 0.5s ease;
+}
+
+.why-content i:hover {
+	font-size: 50%;
 }
 
 .why-card strong {
@@ -543,7 +585,7 @@ footer img {
 		rgba(252, 255, 227, 0.3), 
 		rgba(244, 247, 252, 0.3));
 	width: 100%;
-	height: auto;
+	height: 100vh;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
@@ -617,7 +659,6 @@ footer img {
 }
 
 .testimonial-slide {
-	display: inline-block;
 	width: 100%;
 }
 

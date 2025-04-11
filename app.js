@@ -157,24 +157,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to update the carousel view with sliding effect
     function updateCarousel() {
-        // Hide all items
+        // Loop through all items
         items.forEach((item, index) => {
             item.classList.remove('active', 'inactive');
-            item.classList.add(index === currentIndex ? 'active' : 'inactive');
+            if (index === currentIndex) {
+                item.classList.add('active');
+            } else {
+                item.classList.add('inactive');
+            }
         });
     }
 
     // Next button functionality
     const nextBtn = document.getElementById('nextBtn');
     nextBtn.addEventListener('click', function () {
-        currentIndex = (currentIndex + 1) % items.length; // Loop back to first item
+        currentIndex = (currentIndex + 1) % items.length; // Loop back to the first item
         updateCarousel();
     });
 
     // Previous button functionality
     const prevBtn = document.getElementById('prevBtn');
     prevBtn.addEventListener('click', function () {
-        currentIndex = (currentIndex - 1 + items.length) % items.length; // Loop back to last item
+        currentIndex = (currentIndex - 1 + items.length) % items.length; // Loop back to the last item
         updateCarousel();
     });
 

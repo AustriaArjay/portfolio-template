@@ -17,7 +17,7 @@
     <!-- Open Graph Meta Tags (for social media sharing) -->
     <meta property="og:title" content="InsuranceGuyPH - Gabino Cunada">
     <meta property="og:description" content="Gabino Cunada offers expert insurance advice and services for individuals, families, and businesses in the Philippines. Secure your financial future with life, health, and investment plans.">
-    <meta property="og:image" content="https://www.x8metal.com/insuranceguyph.com/resources/InsuranceGuyPHSitePreview.png">
+    <meta property="og:image" content="https://www.x8metal.com/insuranceguyph.com/resources/InsuranceGuyfacebook.png">
     <meta property="og:url" content="https://www.x8metal.com/insuranceguyph.com/">
     <meta property="og:type" content="website">
     
@@ -90,10 +90,9 @@
                 </div>
                 <div class="carousel-item" id="item2" style="background-image: url('resources/backgrounds/2.png');">
                     <div class="carousel-caption2">
-                        <h1>Mission<br>Gabino Cunada</h1>
+                        <h1>Plan Smart <br>Invest Wise </h1>
                         <p>
-                            Trusted Financial Advisor | Helping Filipinos & 
-                            <br>Businesses Build Wealth & Protection
+                            Live Secure With Gabino Cunada by Your Side
                         </p>
                         <a href="#footer"><i class="fa-brands fa-get-pocket"></i> Get a Free Consultation</a>
                     </div>
@@ -368,23 +367,24 @@
                     </div>
 
                     <div class="testimonial swiper-slide">
-                    <div class="swiper-quote">
-                        <div class="swiper-user">
-                            <div>
-                                <img src="resources/profile.png">
-                            </div>
-                            <div>
-                                <p> ABC Corp</p>
-                                <span> HR Manager </span>
-                            </div>
-                            </div>
-                            <p>⭐️⭐️⭐️⭐️⭐️ </p>
-                            <p>    
-                                <i class="fas fa-quote-left"></i> 
-                                    We were looking for a cost-effective HMO for our employees. Gabino 
-                                    provided us with the best options—great coverage at an affordable price!
-                                <i class="fas fa-quote-right"></i>
-                            </p>
+                        <div class="swiper-quote">
+                            <div class="swiper-user">
+                                <div>
+                                    <img src="resources/profile.png">
+                                </div>
+                                <div>
+                                    <p> ABC Corp</p>
+                                    <span> HR Manager </span>
+                                </div>
+                                </div>
+                                <p>⭐️⭐️⭐️⭐️⭐️ </p>
+                                <p>    
+                                    <i class="fas fa-quote-left"></i> 
+                                        We were looking for a cost-effective HMO for our employees. Gabino 
+                                        provided us with the best options—great coverage at an affordable price!
+                                    <i class="fas fa-quote-right"></i>
+                                </p>
+                            </div>    
                         </div>
                     </div>
 
@@ -479,14 +479,69 @@
 
     <!-- Footer -->
     <footer id="footer" class="footer">
-        <img src="resources/brand.png">
-        <p>&copy; 2025 Gabino Cunada | All Rights Reserved</p> 
-        <p>
+        <div class="footer-content">
+            <div class="left-footer">
+                <div class="footer-icon">
+                    <img src="resources/brand.png">
+                    <span>Gabino Cunada</span>
+                </div>
+                <p>
+                    Address: SAMPLEASKDMDNDMASDK<br>ajdnAKJSNDjansdjasdsad
+                    Phone
+                </p>
+                <p>
+                    +63 564 2515 656
+                </p>
+                <div class="footer-blogs">
+                    <a 
+                        class="fab fa-youtube"
+                        target="_blank" 
+                        href="https://www.youtube.com/@gabinocunada">
+                    </a>
+                    <a 
+                        class="fab fa-facebook"
+                        target="_blank" 
+                        href="https://www.facebook.com/gabinocunadafinancialadvisor">
+                    </a>
+                    <a 
+                        class="fab fa-tiktok"
+                        target="_blank" 
+                        href="https://www.tiktok.com/@insurance_guyph">
+                    </a>
+                </div>
+            </div>
+            <div class="middle-footer">
+                <div>
+                    <a href="#">Company</a>
+                    <ul>                   
+                        <li>Services</li>
+                        <li>About</li>
+                        <li>Connect with me</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#">Help</a>
+                    <ul>
+                        <li>Customer Support</li>
+                        <li>Terms and Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-footer">
+                <p>
             | Powered by
             <a target="_blank" href="https://technomancer.biz/"> 
                 <img src="resources/icon.png"> Technomancer 
             </a>
         </p>
+            </div> 
+        </div>    
+
+
+        <!-- <img src="resources/brand.png">
+        <p>&copy; 2025 Gabino Cunada | All Rights Reserved</p> 
+        -->
     </footer>
 </body>
 
