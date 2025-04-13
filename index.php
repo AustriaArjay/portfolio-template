@@ -39,6 +39,64 @@
 
     <!-- App Script -->
     <script src="app.js" defer></script>
+    <style>
+        .home-carousel {
+  perspective: 1200px;
+  height: 96vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.inner-carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  backface-visibility: hidden;
+}
+
+/* Position each face of the cube */
+.carousel-item.front {
+  transform: rotateY(0deg) translateZ(625px);
+}
+
+.carousel-item.back {
+  transform: rotateY(180deg) translateZ(625px);
+}
+
+/* Navigation buttons (optional polish) */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  color: #000957;
+  cursor: pointer;
+  z-index: 2;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.carousel-control-prev { left: 0; }
+.carousel-control-next { right: 0; }
+
+    </style>
 </head>
 
 <body>
@@ -76,9 +134,9 @@
     <!-- home Section -->
     <header id="home" class="home">
         <div class="home-carousel">
-            <div class="inner-carousel">
+            <div class="inner-carousel cube">
                 <!-- Carousel Items -->
-                <div class="carousel-item" id="item1" style="background-image: url('resources/backgrounds/3.png');">
+                <div class="carousel-item front" id="item1" style="background-image: url('resources/backgrounds/3.png');">
                     <div class="carousel-caption1">
                         <h1>Secure Your Future with <br>Gabino Cunada</h1>
                         <p>
@@ -88,7 +146,7 @@
                         <a href="#footer"><i class="fa-brands fa-get-pocket"></i> Get a Free Consultation</a>
                     </div>
                 </div>
-                <div class="carousel-item" id="item2" style="background-image: url('resources/backgrounds/2.png');">
+                <div class="carousel-item back" id="item2" style="background-image: url('resources/backgrounds/2.png');">
                     <div class="carousel-caption2">
                         <h1>Plan Smart <br>Invest Wise </h1>
                         <p>

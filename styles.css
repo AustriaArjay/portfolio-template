@@ -24,52 +24,106 @@ nav__menu--open {
 }
 
 /* Carousel Container */
-.home-carousel .inner-carousel {
-    width: 100%;
-    overflow: hidden; /* Hide overflow when transitioning */
+	/* --- 3D Cube Wrapper --- */
+.home-carousel {
+	perspective: 1200px;
+	overflow: hidden;
 	height: 96vh;
 	position: relative;
 	z-index: 1;
 }
 
-/* Carousel Items */
+/* --- Cube Container --- */
+.home-carousel .inner-carousel {
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: transform 1s ease-in-out;
+	position: relative;
+}
+
+/* --- Cube Faces / Carousel Items --- */
 .carousel-item {
-    display: none; /* Hide all items initially */
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    opacity: 0;
-	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	backface-visibility: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 13rem;
 }
 
-.carousel-item.active {
-	transform: translateX(0);
-    display: block;
-    opacity: 1; /* Make the active item visible */
+/* Each face (adjust translateZ for cube depth) */
+.carousel-item.front {
+	transform: rotateY(0deg) translateZ(625px);
 }
 
-.carousel-item.inactive {
-    display: none;
-	transform: translateX(100%);
+.carousel-item.right {
+	transform: rotateY(90deg) translateZ(625px);
 }
 
-/* Carousel Navigation Buttons */
+.carousel-item.back {
+	transform: rotateY(180deg) translateZ(625px);
+}
+
+.carousel-item.left {
+	transform: rotateY(-90deg) translateZ(625px);
+}
+
+/* --- Captions --- */
+.carousel-caption1, 
+.carousel-caption2 {
+	color: #000957;
+	max-width: 600px;
+}
+
+.carousel-item h1 {
+	font-size: 4.5rem;
+	margin-bottom: 1rem;
+	line-height: 4rem;
+	color: #000957;
+}
+
+.carousel-item p {
+	font-size: 1.2rem;
+	margin-bottom: 5rem;
+}
+
+.carousel-item a {
+	text-decoration: none;
+	font-size: 1rem;
+	padding: 1rem;
+	background-color: #000957;
+	border: #000957 solid 5px;
+	color: white;
+	font-weight: bold;
+	border-radius: 3rem;
+	transition: background-color 0.3s ease;
+}
+
+.carousel-item a:hover {
+	background-color: #0011ff;
+}
+
+/* --- Navigation Buttons --- */
 .carousel-control-prev,
 .carousel-control-next {
-    position: absolute;
+	position: absolute;
 	height: 100%;
 	width: 10%;
-    top: 50%;
+	top: 50%;
 	border: none;
 	background-color: transparent;
-    font-size: 2.5rem;
+	font-size: 2.5rem;
 	font-weight: bold;
-    color: #000957;
-    cursor: pointer;
-    user-select: none;
-    transform: translateY(-50%);
+	color: #000957;
+	cursor: pointer;
+	user-select: none;
+	transform: translateY(-50%);
+	z-index: 2;
 }
 
 .carousel-control-prev:hover,
@@ -78,47 +132,13 @@ nav__menu--open {
 }
 
 .carousel-control-prev {
-    left: 0;
+	left: 0;
 }
 
 .carousel-control-next {
-    right: 0;
+	right: 0;
 }
 
-/* Captions */
-.carousel-caption1, 
-.carousel-caption2 {
-    position: absolute;
-	left: 13rem;
-	top: 25rem;
-}
-
-.carousel-item h1 {
-	color: #000957;
-    font-size: 4.5rem;
-    margin-bottom: 20px;
-	line-height: 4rem;
-	margin-bottom: 1rem;
-}
-
-.carousel-item p  {
-    font-size: 1.2rem;
-    margin-bottom: 5rem;
-}
-
-.carousel-item a {
-    text-decoration: none;
-	font-size: 1rem;
-    padding: 1rem;
-    background-color: #000957;
-	border: #000957 solid 5px;
-    color: white;
-    font-weight: bold;
-    border-radius: 3rem;
-}
-.carousel-item a:hover {
-	background-color: #0011ff;
-}
 
 nav {
 	position: fixed;
@@ -518,7 +538,7 @@ footer a {
 	background-color: #d3e3fd;
 	border-radius: 0 50px;
 	border-left: 5px solid transparent; 
-  	border-image: linear-gradient(to bottom, #f7df0b, #fffaca, transparent) 1;
+  border-image: linear-gradient(to bottom, #f7df0b, #fffaca, transparent) 1;
 	text-align: left;
 	padding: 1.5rem;
 	height: 300px;

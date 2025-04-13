@@ -169,19 +169,41 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Next button functionality
-    const nextBtn = document.getElementById('nextBtn');
-    nextBtn.addEventListener('click', function () {
-        currentIndex = (currentIndex + 1) % items.length; // Loop back to the first item
-        updateCarousel();
-    });
-
-    // Previous button functionality
+    coconst nextBtn = document.getElementById('nextBtn');
     const prevBtn = document.getElementById('prevBtn');
-    prevBtn.addEventListener('click', function () {
-        currentIndex = (currentIndex - 1 + items.length) % items.length; // Loop back to the last item
-        updateCarousel();
+    const prism = document.querySelector('.rec-prism'); // This is your cube
+    let currentIndex = 0;
+    
+    // Total number of sides (adjust based on how many you defined)
+    const totalSides = 3; // front, right, back
+    
+    // Function to rotate cube based on current index
+    function rotateCube(index) {
+        switch (index) {
+            case 0:
+                prism.style.transform = "translateZ(-100px) rotateY(0deg)";
+                break;
+            case 1:
+                prism.style.transform = "translateZ(-100px) rotateY(-90deg)";
+                break;
+            case 2:
+                prism.style.transform = "translateZ(-100px) rotateY(-180deg)";
+                break;
+        }
+    }
+    
+    // NEXT button click
+    nextBtn.addEventListener('click', function () {
+        currentIndex = (currentIndex + 1) % totalSides;
+        rotateCube(currentIndex);
     });
-
-    // Initialize the carousel by showing the first item
-    updateCarousel();
+    
+    // PREV button click
+    prevBtn.addEventListener('click', function () {
+        currentIndex = (currentIndex - 1 + totalSides) % totalSides;
+        rotateCube(currentIndex);
+    });
+    
+    // Initialize cube position
+    rotateCube(currentIndex);
 });
