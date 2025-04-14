@@ -148,62 +148,90 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
-    
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-    const items = document.querySelectorAll('.carousel-item');
-    let currentIndex = 0;
-
-    // Function to update the carousel view with sliding effect
-    function updateCarousel() {
-        // Loop through all items
-        items.forEach((item, index) => {
-            item.classList.remove('active', 'inactive');
-            if (index === currentIndex) {
-                item.classList.add('active');
-            } else {
-                item.classList.add('inactive');
-            }
-        });
-    }
-
-    // Next button functionality
-    coconst nextBtn = document.getElementById('nextBtn');
+    const track = document.getElementById('carouselTrack');
     const prevBtn = document.getElementById('prevBtn');
-    const prism = document.querySelector('.rec-prism'); // This is your cube
-    let currentIndex = 0;
-    
-    // Total number of sides (adjust based on how many you defined)
-    const totalSides = 3; // front, right, back
-    
-    // Function to rotate cube based on current index
-    function rotateCube(index) {
-        switch (index) {
-            case 0:
-                prism.style.transform = "translateZ(-100px) rotateY(0deg)";
-                break;
-            case 1:
-                prism.style.transform = "translateZ(-100px) rotateY(-90deg)";
-                break;
-            case 2:
-                prism.style.transform = "translateZ(-100px) rotateY(-180deg)";
-                break;
+    const nextBtn = document.getElementById('nextBtn');
+    let slides = document.querySelectorAll('.carousel-item');
+    let index = 1;
+    let interval;
+
+    // Clone first and last slides
+    const firstClone = slides[0].cloneNode(true);
+    const lastClone = slides[slides.length - 1].cloneNode(true);
+
+    firstClone.id = 'first-clone';
+    lastClone.id = 'last-clone';
+
+    track.appendChild(firstClone);
+    track.insertBefore(lastClone, slides[0]);
+
+    slides = document.querySelectorAll('.carousel-item');
+    const slideWidth = slides[index].clientWidth;
+
+    track.style.transform = `translateX(-${slideWidth * index}px)`;
+
+    const moveToSlide = () => {
+      track.style.transition = 'transform 0.5s ease-in-out';
+      track.style.transform = `translateX(-${slideWidth * index}px)`;
+    };
+
+    const resetPosition = () => {
+      slides = document.querySelectorAll('.carousel-item');
+      if (slides[index].id === 'first-clone') {
+        track.style.transition = 'none';
+        index = 1;
+        track.style.transform = `translateX(-${slideWidth * index}px)`;
+      }
+      if (slides[index].id === 'last-clone') {
+        track.style.transition = 'none';
+        index = slides.length - 2;
+        track.style.transform = `translateX(-${slideWidth * index}px)`;
+      }
+    };
+
+    const startAutoSlide = () => {
+      interval = setInterval(() => {
+        index++;
+        moveToSlide();
+      }, 5000);
+    };
+
+    const stopAutoSlide = () => clearInterval(interval);
+
+    track.addEventListener('transitionend', resetPosition);
+
+    nextBtn.addEventListener('click', () => {
+      if (index >= slides.length - 1) return;
+      index++;
+      moveToSlide();
+      stopAutoSlide();
+      startAutoSlide();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (index <= 0) return;
+      index--;
+      moveToSlide();
+      stopAutoSlide();
+      startAutoSlide();
+    });
+
+    window.addEventListener('resize', () => {
+      const newWidth = slides[0].clientWidth;
+      track.style.transition = 'none';
+      track.style.transform = `translateX(-${newWidth * index}px)`;
+    });
+
+    // Handle tab visibility change
+    document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+            stopAutoSlide(); // Stop auto slide when the tab is inactive
+        } else {
+            startAutoSlide(); // Restart auto slide when the tab becomes active
         }
-    }
-    
-    // NEXT button click
-    nextBtn.addEventListener('click', function () {
-        currentIndex = (currentIndex + 1) % totalSides;
-        rotateCube(currentIndex);
     });
-    
-    // PREV button click
-    prevBtn.addEventListener('click', function () {
-        currentIndex = (currentIndex - 1 + totalSides) % totalSides;
-        rotateCube(currentIndex);
-    });
-    
-    // Initialize cube position
-    rotateCube(currentIndex);
+
+    // Init
+    startAutoSlide();
 });

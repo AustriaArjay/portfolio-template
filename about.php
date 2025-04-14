@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Cube - Responsive</title>
+  <title>Services Cube - Responsive</title>
 
   <style>
     * {
@@ -51,8 +51,8 @@
       border: 3px solid #07ad90;
       border-radius: 5px;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
       overflow: hidden;
     }
@@ -93,6 +93,18 @@
       transform: rotateY(90deg) translateZ(625px);
     }
 
+    .rec-prism-left {
+      transform: rotateY(-90deg) translateZ(625px);
+    }
+
+    .rec-prism-top {
+      transform: rotateX(90deg) translateZ(625px);
+    }
+
+    .rec-prism-bottom {
+      transform: rotateX(-90deg) translateZ(625px);
+    }
+
     /* Navigation */
     .about-list {
       margin: 20px 0;
@@ -112,16 +124,50 @@
       transition: background 0.3s ease, color 0.3s ease;
     }
 
-    /* Remove the underline */
-    .about-list li::after {
-      display: none;
-    }
-
-    /* Add highlight for active item */
     .about-list li.active {
       background-color: #07ad90;
       color: #fff;
       border-radius: 4px;
+    }
+
+    /* Service cards */
+    .service-card {
+      background: #fff;
+      width: 100%;
+      max-width: 20rem;
+      box-shadow: 0 0.5rem 0.9375rem rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-radius: 5px;
+      padding: 1em;
+    }
+
+    .service-card h3 {
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: #000957;
+      text-align: left;
+      padding: 0;
+      line-height: 2rem;
+    }
+
+    .service-card p {
+      text-align: left;
+      font-size: 1.1rem;
+      color: #000c79;
+    }
+
+    .service-card img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+
+    .service-card img:hover {
+      transform: scale(1.02);
     }
 
     /* Responsive styles */
@@ -196,54 +242,77 @@
   </style>
 </head>
 <body>
+  <section id="services" class="section">
+    <h1>Helping You Every Step of the Way</h1>
+    <p>
+      Whether you're an individual looking to secure your family's future or a business aiming to support 
+      your employees' financial well-being, I'm here to provide tailored solutions that meet your unique 
+      needs, guiding you every step of the way towards financial stability and success.
+    </p>
 
-  <section id="about" class="section">
-    <h1>About InsuranceGuyPH</h1>
+    <!-- Navigation for Services -->
+    <ul class="about-list">
+      <li onclick="showFront()">For Individuals and Families</li>
+      <li onclick="showRight()">For Business and Corporate Clients</li>
+    </ul>
 
     <div class="wrapper">
-      <ul class="about-list">
-        <li onclick="showFront()">Goal</li>
-        <li onclick="showRight()">Mission</li>
-        <li onclick="showBack()">Vision</li>
-      </ul>
-
       <div class="rec-prism">
-        <!-- Front - Goal -->
+        <!-- Front - For Individuals and Families -->
         <div class="face rec-prism-front">
-          <img src="resources/profile.png" alt="Goal-Image" />
-          <div class="content">
-            <h2>Goal</h2>
-            <p>
-              To become the trusted and go-to expert for health, life, and property insurance,
-              delivering exceptional service that makes every client feel valued, prioritized,
-              and confident in their financial decisions.
-            </p>
+          <div class="service-card">
+            <img src="resources/images/background-banner/7.png" />
+            <h3>Life Insurance</h3>
+            <p>Ensure your family's financial security in case of unforeseen events.</p>
+          </div>
+          <div class="service-card">
+            <img src="resources/images/background-banner/5.png" />
+            <h3>Health Insurance</h3>
+            <p>Cover medical expenses & critical illnesses.</p>
+          </div>
+          <div class="service-card">
+            <img src="resources/images/background-banner/13.png" />
+            <h3>Investment Planning</h3>
+            <p>Enjoy financial freedom when you retire.</p>
+          </div>
+          <div class="service-card">
+            <img src="resources/images/background-banner/7.png" />
+            <h3>Life Insurance</h3>
+            <p>Ensure your family's financial security in case of unforeseen events.</p>
+          </div>
+          <div class="service-card">
+            <img src="resources/images/background-banner/5.png" />
+            <h3>Health Insurance</h3>
+            <p>Cover medical expenses & critical illnesses.</p>
+          </div>
+          <div class="service-card">
+            <img src="resources/images/background-banner/13.png" />
+            <h3>Investment Planning</h3>
+            <p>Enjoy financial freedom when you retire.</p>
           </div>
         </div>
 
-        <!-- Right - Mission -->
+        <!-- Right - For Business and Corporate Clients -->
         <div class="face rec-prism-right">
-          <img src="resources/profile.png" alt="Mission-Image" />
-          <div class="content">
-            <h2>Mission</h2>
-            <p>
-              To provide consistent, high-quality, and personalized client service, ensuring
-              that every individual receives the best insurance solutions tailored to their unique
-              needs and goals.
-            </p>
+          <div class="service-card">
+            <img src="resources/images/background-banner/13.png" />
+            <h3>Customized HMO & Medical Insurance Plan</h3>
+            <p>Provide employees with affordable and comprehensive healthcare solutions.</p>
           </div>
-        </div>
-
-        <!-- Back - Vision -->
-        <div class="face rec-prism-back">
-          <img src="resources/profile.png" alt="Vision-Image" />
-          <div class="content">
-            <h2>Vision</h2>
-            <p>
-              To be recognized as the leading authority and most reliable financial advisor in the
-              Philippines for all things insurance—setting the standard for excellence, trust, and
-              client satisfaction in the industry.
-            </p>
+          <div class="service-card">
+            <img src="resources/images/background-banner/3.png" />
+            <h3>Group Life Insurance & Employee Benefits</h3>
+            <p>Protect your workforce and boost employee retention.</p>
+          </div>
+          <div class="service-card">
+            <img src="resources/images/background-banner/14.png" />
+            <h3>Company Investment & Retirement Plans</h3>
+            <p>Help employees prepare for a financially stable future.</p>
+          </div>
+          <div class="service-card">
+            <img src="resources/images/background-banner/14.png" />
+            <h3>Company Investment & Retirement Plans</h3>
+            <p>Help employees prepare for a financially stable future.</p>
           </div>
         </div>
       </div>
@@ -253,35 +322,30 @@
   <!-- JavaScript -->
   <script>
     const prism = document.querySelector(".rec-prism");
-  const aboutItems = document.querySelectorAll(".about-list li");
+    const aboutItems = document.querySelectorAll(".about-list li");
 
-  function setActive(index) {
-    aboutItems.forEach((item, i) => {
-      if (i === index) {
-        item.classList.add("active");
-      } else {
-        item.classList.remove("active");
-      }
-    });
-  }
+    function setActive(index) {
+      aboutItems.forEach((item, i) => {
+        if (i === index) {
+          item.classList.add("active");
+        } else {
+          item.classList.remove("active");
+        }
+      });
+    }
 
-  function showFront() {
-    prism.style.transform = "translateZ(-625px) rotateY(0deg)";
+    function showFront() {
+      prism.style.transform = "translateZ(-625px) rotateY(0deg)";
+      setActive(0);
+    }
+
+    function showRight() {
+      prism.style.transform = "translateZ(-625px) rotateY(-90deg)";
+      setActive(1);
+    }
+
+    // Optionally, set default active on load
     setActive(0);
-  }
-
-  function showRight() {
-    prism.style.transform = "translateZ(-625px) rotateY(-90deg)";
-    setActive(1);
-  }
-
-  function showBack() {
-    prism.style.transform = "translateZ(-625px) rotateY(-180deg)";
-    setActive(2);
-  }
-
-  // Optionally, set default active on load
-  setActive(0); 
   </script>
 </body>
 </html>
