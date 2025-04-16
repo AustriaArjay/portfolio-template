@@ -75,7 +75,7 @@
         <div class="nav__container">
             <div class="nav__brand">
                 <img src="resources/brand.png" alt="Logo">
-                <a href="#" class="logo">InsuranceGuyPH</a>
+                <a href="#" class="logo">GABINO CUNADA</a>
             </div>
             <div class="nav__toggle" id="nav-toggle">
                 <i class="fas fa-bars"></i>
@@ -96,14 +96,14 @@
         <div class="home-carousel">
         <div class="inner-carousel" id="carouselTrack">
             <!-- Slides -->
-            <div class="carousel-item" style="background-image: url('resources/backgrounds/3.png');">
+            <div class="carousel-item" style="background-image: url('resources/backgrounds/2.png');">
             <div class="carousel-caption1">
                 <h1>Secure Your Future with <br>Gabino Cunada</h1>
                 <p>Trusted Financial Advisor | Helping Filipinos & <br>Businesses Build Wealth & Protection</p>
                 <a href="#footer"><i class="fa-brands fa-get-pocket"></i> Get a Free Consultation</a>
             </div>  
             </div>
-            <div class="carousel-item" style="background-image: url('resources/backgrounds/2.png');">
+            <div class="carousel-item" style="background-image: url('resources/backgrounds/3.png');">
             <div class="carousel-caption2">
                 <h1>Plan Smart <br>Invest Wise</h1>
                 <p>Live Secure With Gabino Cunada by Your Side</p>
@@ -163,69 +163,77 @@
         <section id="services" class="section">
             <h1>Helping You Every Step of the Way</h1>
             <p>
-                Whether you're an individual looking to secure your family's future or a business aiming to support 
-                your employees' financial well-being, I'm here to provide tailored solutions that meet your unique 
-                needs, guiding you every step of the way towards financial stability and success.
+            Whether you're an individual looking to secure your family's future or a business aiming to support 
+            your employees' financial well-being, I'm here to provide tailored solutions that meet your unique 
+            needs, guiding you every step of the way towards financial stability and success.
             </p>
-            <h3>FOR INDIVIDUALS AND FAMILIES:</h3>
-            <div class="service-slide">
-                <div class="service-cards">
-                    <div class="service-card card-left">
-                        <img src="resources/images/background-banner/7.png">
-                        <h3>Life Insurance</h3>
-                        <p>Ensure your family's financial security in case of unforeseen events.</p>
-                    </div>
-                    <div class="service-card card-middle">
-                        <img src="resources/images/background-banner/5.png">
-                        <h3>Health Insurance</h3>
-                        <p>Cover medical expenses & critical illnesses.</p>
-                    </div>
-                    <div class="service-card card-right">
-                        <img src="resources/images/background-banner/13.png">
-                        <h3>Investment Planning</h3>
-                        <p>Enjoy financial freedom when you retire.</p>
-                    </div>
-                    <div class="service-card card-left">
-                        <img src="resources/images/background-banner/4.png">
-                        <h3>Retirement Planning</h3>
-                        <p>Enjoy financial freedom when you retire.</p>
-                    </div>
-                    <div class="service-card card-middle">
-                        <img src="resources/images/background-banner/11.png">
-                        <h3>Income Protection</h3>
-                        <p>Safeguard your earnings & secure your future.</p>
-                    </div>
-                    <div class="service-card card-right">
-                        <img src="resources/images/background-banner/12.png">
-                        <h3>Education Fund Planning</h3>
-                        <p>Ensure your children's education without financial stress.</p>
-                    </div>
+
+            <!-- Navigation for Services -->
+            <ul class="service-nav">
+            <li onclick="showFront()"><i class="fas fa-user"></i> For Individuals and Families</li>
+            <li onclick="showback()"><i class="fas fa-user"></i> Business and Corporate Clients</li>
+            </ul>
+
+            <div class="wrapper">
+            <div class="service-cube">
+                <!-- Front - For Individuals and Families -->
+                <div class="service-face service-front">
+                <div class="service-card">
+                    <img src="resources/images/background-banner/7.png" />
+                    <h3>Life Insurance</h3>
+                    <p>Ensure your family's financial security in case of unforeseen events.</p>
+                </div>
+                <div class="service-card">
+                    <img src="resources/images/background-banner/5.png" />
+                    <h3>Health Insurance</h3>
+                    <p>Cover medical expenses & critical illnesses.</p>
+                </div>
+                <div class="service-card">
+                    <img src="resources/images/background-banner/13.png" />
+                    <h3>Investment Planning</h3>
+                    <p>Enjoy financial freedom when you retire.</p>
+                </div>
+                <div class="service-card">
+                    <img src="resources/images/background-banner/7.png" />
+                    <h3>Life Insurance</h3>
+                    <p>Ensure your family's financial security in case of unforeseen events.</p>
+                </div>
+                <div class="service-card">
+                    <img src="resources/images/background-banner/5.png" />
+                    <h3>Health Insurance</h3>
+                    <p>Cover medical expenses & critical illnesses.</p>
+                </div>
+                <div class="service-card">
+                    <img src="resources/images/background-banner/13.png" />
+                    <h3>Investment Planning</h3>
+                    <p>Enjoy financial freedom when you retire.</p>
+                </div>
+                </div>
+
+                <!-- Right - For Business and Corporate Clients -->
+                <div class="service-face service-back">
+                <div class="service-card">
+                    <img src="resources/images/background-banner/13.png" />
+                    <h3>Customized HMO & Medical Insurance Plan</h3>
+                    <p>Provide employees with affordable and comprehensive healthcare solutions.</p>
+                </div>
+                <div class="service-card">
+                    <img src="resources/images/background-banner/3.png" />
+                    <h3>Group Life Insurance & Employee Benefits</h3>
+                    <p>Protect your workforce and boost employee retention.</p>
+                </div>
+                <div class="service-card">
+                    <img src="resources/images/background-banner/14.png" />
+                    <h3>Company Investment & Retirement Plans</h3>
+                    <p>Help employees prepare for a financially stable future.</p>
+                </div>
+                <div class="service-card">
+                    <img src="resources/images/background-banner/14.png" />
+                    <h3>Company Investment & Retirement Plans</h3>
+                    <p>Help employees prepare for a financially stable future.</p>
+                </div>
                 </div>
             </div>
-            <h3>FOR BUSINESS AND CORPORATE CLIENTS:</h3>
-            <div class="service-slide">
-                <div class="service-cards">
-                    <div class="service-card card-left">
-                        <img src="resources/images/background-banner/13.png">
-                        <h3>Customized HMO & Medical Insurance Plan</h3>
-                        <p>Provide employees with affordable and comprehensive healthcare solutions.</p>
-                    </div>
-                    <div class="service-card card-middle">
-                        <img src="resources/images/background-banner/3.png">
-                        <h3>Group Life Insurance & Employee Benefits</h3>
-                        <p>Protect your workforce and boost employee retention.</p>
-                    </div>
-                    <div class="service-card card-right">
-                        <img src="resources/images/background-banner/14.png">
-                        <h3>Company Investment & Retirement Plans</h3>
-                        <p>Help employees prepare for a financially stable future.</p>
-                    </div>
-                    <div class="service-card card-left">
-                        <img src="resources/images/background-banner/1.png">
-                        <h3>Financial Wellness Seminars</h3>
-                        <p>Equip your team with essential financial knowledge for smarter money management.</p>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -273,91 +281,64 @@
 
             <!-- Why Section -->
             <div class="why-container">
-                <h1>Why Choose Me?</h1>
-                <h2>Your Trusted Partner in Financial Planning and Corporate Benefits</h2>
+                <div class="why-title">
+                    <h1>Why Choose Me?</h1>
+                    <h2>Your Trusted Partner in Financial Planning<br> and Corporate Benefits</h2>
+                </div>
                 <div class="why-content">
                     <div class="why-card">
                         <div class="card-title">
                             <i class="fas fa-cogs"></i>
                             <p>Tailored Solutions for Individuals & Companies</p>
                         </div>
-                        <h2>
+                        <div class="card-content">
+                        <h3>
                             Get a personalized financial or corporate benefits plan based on your needs.
-                    </h2>
+                        </h3>
+                        <a href="#">Read More</a>
+                        </div>
                     </div>
                     <div class="why-card">
                         <div class="card-title">
                             <i class="fas fa-handshake"></i>
-                            <h2>Transparent & Trusted Advice</h2>
+                            <p>Transparent & Trusted Advice</p>
                         </div>
-                        <p>
+                        <div class="card-content">
+                        <h3>
                             No hidden fees, just honest guidance.
-                        </p>
+                        </h3>
+                        <a href="#">Read More</a>
+                        </div>
                     </div>
                     <div class="why-card">
                         <div class="card-title">
                             <i class="fas fa-briefcase"></i>
-                            <h2>Proven Expertise in Personal & Corporate Finance</h2>
+                            <p>Proven Expertise in Personal & Corporate Finance</p>
                         </div>
-                        <p>
-                            Years of experience helping Filipinos and businesses secure their financial future.
-                        </p>
+                        <div class="card-content">
+                        <h3>
+                            Years of experience helping Filipinos and businesses <br> secure their financial future.
+                        </h3>
+                        <a href="#">Read More</a>
+                        </div>
                     </div>
                     <div class="why-card">
                         <div class="card-title">
                             <i class="fas fa-chalkboard-teacher"></i>
-                            <h2>Educational Content</h2>
+                            <p>Educational Content</p>
                         </div>
-                        <p>
-                            Follow me on social media for valuable financial tips & business insights.
-                        </p>
+                        <div class="card-content">
+                            <div>
+                                <h3>
+                                    Follow me on social media for valuable financial tips & business insights.
+                                </h3>
+                            </div>
+                            <a href="#">Read More</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- FAQs Section -->
-            <div class="faqs">
-                <h1>Frequently Asked Questions</h1>
-                <h3>Your Guide to Insurance, Investments, and More</h3>
-                <div class="faq-content">
-                    <div class="faq-item">
-                        <button class="faq-question"><i class="fas fa-book-open">
-                            </i> I don't know anything about insurance or investments. Can you help me?
-                        </button>
-                        <p class="faq-answer">
-                            ✔ Absolutely! I will guide you step by step and explain everything in simple terms.
-                        </p>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question"><i class="fas fa-dollar-sign">
-                            </i> Is life insurance expensive?
-                        </button>
-                        <p class="faq-answer">
-                            ✔ There are plans for every budget! I'll help you find the best coverage based on your 
-                            financial situation.
-                        </p>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question"><i class="fas fa-medkit"></i> 
-                            What HMO or medical insurance plan is best for my company?
-                        </button>
-                        <p class="faq-answer">
-                            ✔ That depends on your budget and employee needs. I'll help you compare different options 
-                            and choose the best one for your team.
-                        </p>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question"><i class="fas fa-chalkboard-teacher"></i> 
-                            Do you offer financial wellness seminars for companies?
-                        </button>
-                        <p class="faq-answer">
-                            ✔ Yes! I can conduct training sessions to educate employees on savings, investments, 
-                            insurance, and financial planning.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
             <!-- Testimonials Section -->
             <div class="testimonials">
                 <h1>What My Clients Say</h1>
@@ -375,7 +356,7 @@
                                         <p> Anna D. </p>
                                         <span> Human Resource </span>
                                     </div>
-                                    </div>
+                                    <div>
                                     <p>⭐️⭐️⭐️⭐️⭐️ </p>
                                     <p>    
                                         <i class="fas fa-quote-left"></i> 
@@ -383,6 +364,7 @@
                                             I feel more secure about my future!
                                         <i class="fas fa-quote-right"></i>
                                     </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -397,7 +379,7 @@
                                         <p> ABC Corp</p>
                                         <span> HR Manager </span>
                                     </div>
-                                    </div>
+                                    <div>
                                     <p>⭐️⭐️⭐️⭐️⭐️ </p>
                                     <p>    
                                         <i class="fas fa-quote-left"></i> 
@@ -405,35 +387,81 @@
                                             provided us with the best options—great coverage at an affordable price!
                                         <i class="fas fa-quote-right"></i>
                                     </p>
-                                </div>    
+                                    </div>    
+                                </div>
                             </div>
                         </div>
 
                         <div class="testimonial swiper-slide">
-                        <div class="swiper-quote">
-                            <div class="swiper-user">
-                                <div>
-                                    <img src="resources/profile.png">
+                            <div class="swiper-quote">
+                                <div class="swiper-user">
+                                    <div>
+                                        <img src="resources/profile.png">
+                                    </div>
+                                    <div>
+                                        <p> Jen C. </p>
+                                        <span> Human Resource </span>
+                                    </div>
+                                    <div>
+                                    <p>⭐️⭐️⭐️⭐️⭐️ </p>
+                                    <p>    
+                                        <i class="fas fa-quote-left"></i> 
+                                            I was hesitant about insurance before, but Gabino made 
+                                            everything clear and easy to understand. Best decision I made!
+                                        <i class="fas fa-quote-right"></i>
+                                    </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p> Jen C. </p>
-                                    <span> Human Resource </span>
-                                </div>
-                                </div>
-                                <p>⭐️⭐️⭐️⭐️⭐️ </p>
-                                <p>    
-                                    <i class="fas fa-quote-left"></i> 
-                                        I was hesitant about insurance before, but Gabino made 
-                                        everything clear and easy to understand. Best decision I made!
-                                    <i class="fas fa-quote-right"></i>
-                                </p>
                             </div>
                         </div>    
-
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
+
+              <!-- FAQs Section -->
+            <div class="faqs">
+                <h1>FAQs</h1>
+                <h3>Your Guide to Insurance, Investments, and More</h3>
+                <div class="faq-content">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            </i> I don't know anything about insurance or investments. Can you help me?
+                        </button>
+                        <p class="faq-answer">
+                            ✔ Absolutely! I will guide you step by step and explain everything in simple terms.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            </i> Is life insurance expensive?
+                        </button>
+                        <p class="faq-answer">
+                            ✔ There are plans for every budget! I'll help you find the best coverage based on your 
+                            financial situation.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"> 
+                            What HMO or medical insurance plan is best for my company?
+                        </button>
+                        <p class="faq-answer">
+                            ✔ That depends on your budget and employee needs. I'll help you compare different options 
+                            and choose the best one for your team.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" style="border: none;">
+                            Do you offer financial wellness seminars for companies?
+                        </button>
+                        <p class="faq-answer">
+                            ✔ Yes! I can conduct training sessions to educate employees on savings, investments, 
+                            insurance, and financial planning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
         </section>
 
         <!-- Consultation Section -->
@@ -507,12 +535,14 @@
                         <span>Gabino Cunada</span>
                     </div>
                     <p>
-                        Address: SAMPLEASKDMDNDMASDK<br>ajdnAKJSNDjansdjasdsad
-                        Phone
+                        Address: 59 Samonte Street, Holy Spirit 2 1100 Quezon City Metro Manila
                     </p>
                     <p>
                         +63 564 2515 656
                     </p>
+                    <div>
+                        <p>Stay in Touch</p>
+                    </div>
                     <div class="footer-blogs">
                         <a 
                             class="fab fa-youtube"
@@ -529,9 +559,13 @@
                             target="_blank" 
                             href="https://www.tiktok.com/@insurance_guyph">
                         </a>
+                        <a 
+                            class="fab fa-linked-in"
+                            target="_blank" 
+                            href="https://www.tiktok.com/@insurance_guyph">
+                        </a>
                     </div>
-                </div>
-                <div class="middle-footer">
+                <!-- <div class="middle-footer">
                     <div>
                         <a href="#">Company</a>
                         <ul>                   
@@ -548,18 +582,15 @@
                             <li>Privacy Policy</li>
                         </ul>
                     </div>
-                </div>
-                <div class="right-footer">
+                </div> -->
                     <p>
-                | Powered by
-                <a target="_blank" href="https://technomancer.biz/"> 
-                    <img src="resources/icon.png"> Technomancer 
-                </a>
-            </p>
+                        All right Reserve @2025 | Powered by
+                        <a target="_blank" href="https://technomancer.biz/"> 
+                            <img src="resources/icon.png"> Technomancer 
+                        </a>
+                    </p>
                 </div> 
             </div>    
-
-
             <!-- <img src="resources/brand.png">
             <p>&copy; 2025 Gabino Cunada | All Rights Reserved</p> 
             -->

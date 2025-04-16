@@ -80,11 +80,11 @@ document.addEventListener("DOMContentLoaded", () => {
         easing: 'ease-out',
     });
 
-    ScrollReveal().reveal('.maxicare-plan2, .maxicare-plan1, .why-content, .faq-item, .card-middle, .consultation-container', {
+    ScrollReveal().reveal('.maxicare-plan2, .maxicare-plan1, .why-content, .faq-item, .service-face, .consultation-container', {
         origin: 'bottom',
-        distance: '100px',
-        duration: 1200,
-        delay: 300,
+        distance: '300px',
+        duration: 1000,
+        delay: 300 ,
         easing: 'ease-out',
         interval: 200,
     });
@@ -172,18 +172,19 @@ document.addEventListener("DOMContentLoaded", () => {
     track.style.transform = `translateX(-${slideWidth * index}px)`;
 
     const moveToSlide = () => {
-      track.style.transition = 'transform 0.5s ease-in-out';
+      track.style.transition = 'transform 1s ease-in-out';
       track.style.transform = `translateX(-${slideWidth * index}px)`;
     };
 
     const resetPosition = () => {
       slides = document.querySelectorAll('.carousel-item');
+      if (!slides[index]) return;
       if (slides[index].id === 'first-clone') {
         track.style.transition = 'none';
         index = 1;
         track.style.transform = `translateX(-${slideWidth * index}px)`;
       }
-      if (slides[index].id === 'last-clone') {
+      if (!slides[index].id === 'last-clone') {
         track.style.transition = 'none';
         index = slides.length - 2;
         track.style.transform = `translateX(-${slideWidth * index}px)`;
@@ -235,3 +236,25 @@ document.addEventListener("DOMContentLoaded", () => {
     // Init
     startAutoSlide();
 });
+    const cube = document.querySelector(".service-cube");
+    const navItems = document.querySelectorAll(".service-nav li");
+
+    function setActive(index) {
+    navItems.forEach((item, i) => {
+        item.classList.toggle("active", i === index);
+    });
+    }
+
+    function showFront() {
+    cube.style.transform = "translateZ(-750px) rotateY(0deg)";
+    setActive(0);
+    }
+
+    function showback() {
+    cube.style.transform = "translateZ(-750px) rotateY(-180deg)";
+    setActive(1);
+    }
+
+    // Set default active on load
+    setActive(0);
+    

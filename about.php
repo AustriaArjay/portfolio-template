@@ -25,30 +25,28 @@
 
     .wrapper {
       width: 100%;
-      max-width: 1250px;
-      height: 700px;
+      max-width: 1400px;
+      height: 900px; /* Increased from 700px */
       margin: 0 auto;
       perspective: 2000px;
       text-align: left;
       position: relative;
     }
 
-    .rec-prism {
+    .service-cube {
       width: 100%;
       height: 100%;
       position: relative;
       transform-style: preserve-3d;
-      transform: translateZ(-625px);
+      transform: translateZ(-750px); /* Adjusted to match new size */
       transition: transform 0.5s ease-in-out;
     }
 
-    .face {
+    .service-face {
       position: absolute;
       width: 100%;
-      height: 100%;
       padding: 20px;
-      background: rgba(250, 250, 250, 0.96);
-      border: 3px solid #07ad90;
+      background: rgb(250, 250, 250);
       border-radius: 5px;
       display: flex;
       flex-wrap: wrap;
@@ -57,62 +55,44 @@
       overflow: hidden;
     }
 
-    .face img {
+    .service-face img {
       width: 48%;
       max-height: 100%;
       object-fit: cover;
       border-radius: 5px;
     }
 
-    .face .content {
-      width: 48%;
-      color: #666;
-    }
-
-    .face .content h2 {
+    .service-face h2 {
       font-size: 2.5em;
       color: #07ad90;
       margin-bottom: 15px;
     }
 
-    .face .content p {
+    .service-face p {
       font-size: 1.4em;
       line-height: 1.8em;
     }
 
     /* Cube face positions */
-    .rec-prism-front {
-      transform: rotateY(0deg) translateZ(625px);
+    .service-front {
+      transform: rotateY(0deg) translateZ(750px);
     }
-
-    .rec-prism-back {
-      transform: rotateY(180deg) translateZ(625px);
+    .service-front.inactive,
+    .service-right.inactive {
+      display: none;
     }
-
-    .rec-prism-right {
-      transform: rotateY(90deg) translateZ(625px);
-    }
-
-    .rec-prism-left {
-      transform: rotateY(-90deg) translateZ(625px);
-    }
-
-    .rec-prism-top {
-      transform: rotateX(90deg) translateZ(625px);
-    }
-
-    .rec-prism-bottom {
-      transform: rotateX(-90deg) translateZ(625px);
+    .service-right {
+      transform: rotateY(90deg) translateZ(750px);
     }
 
     /* Navigation */
-    .about-list {
+    .service-nav {
       margin: 20px 0;
       padding: 0;
       text-align: center;
     }
 
-    .about-list li {
+    .service-nav li {
       display: inline-block;
       list-style-type: none;
       font-size: 1.2em;
@@ -124,7 +104,7 @@
       transition: background 0.3s ease, color 0.3s ease;
     }
 
-    .about-list li.active {
+    .service-nav li.active {
       background-color: #07ad90;
       color: #fff;
       border-radius: 4px;
@@ -133,8 +113,9 @@
     /* Service cards */
     .service-card {
       background: #fff;
+      height: 540px; /* Increased from 450px */
       width: 100%;
-      max-width: 20rem;
+      max-width: 24rem; /* Increased from 20rem */
       box-shadow: 0 0.5rem 0.9375rem rgba(0, 0, 0, 0.1);
       text-align: center;
       border-radius: 5px;
@@ -152,7 +133,7 @@
 
     .service-card p {
       text-align: left;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       color: #000c79;
     }
 
@@ -160,9 +141,8 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       background-size: cover;
       width: 100%;
-      height: auto;
+      height: 252px; /* Increased from 210px */
       object-fit: cover;
-      padding: 0.5rem;
       border-radius: 5px;
     }
 
@@ -173,69 +153,69 @@
     /* Responsive styles */
     @media (max-width: 1024px) {
       .wrapper {
-        height: 600px;
+        height: 720px;
       }
 
-      .face .content h2 {
+      .service-face h2 {
         font-size: 2em;
       }
 
-      .face .content p {
+      .service-face p {
         font-size: 1.2em;
       }
     }
 
     @media (max-width: 768px) {
       .wrapper {
-        height: 550px;
+        height: 660px;
       }
 
-      .face {
+      .service-face {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
       }
 
-      .face img,
-      .face .content {
+      .service-face img,
+      .service-face {
         width: 90%;
       }
 
-      .face .content h2 {
+      .service-face h2 {
         font-size: 1.8em;
       }
 
-      .face .content p {
+      .service-face p {
         font-size: 1em;
       }
     }
 
     @media (max-width: 480px) {
       .wrapper {
-        height: 500px;
+        height: 600px;
       }
 
-      .about-list li {
+      .service-nav li {
         font-size: 1em;
         margin: 0 10px;
       }
 
-      .face img {
-        max-height: 250px;
+      .service-face img {
+        max-height: 300px;
       }
     }
 
     @media (max-width: 360px) {
       .wrapper {
-        height: 450px;
+        height: 540px;
       }
 
-      .face .content h2 {
+      .service-face h2 {
         font-size: 1.5em;
       }
 
-      .face .content p {
+      .service-face p {
         font-size: 0.95em;
       }
     }
@@ -251,15 +231,15 @@
     </p>
 
     <!-- Navigation for Services -->
-    <ul class="about-list">
+    <ul class="service-nav">
       <li onclick="showFront()">For Individuals and Families</li>
       <li onclick="showRight()">For Business and Corporate Clients</li>
     </ul>
 
     <div class="wrapper">
-      <div class="rec-prism">
+      <div class="service-cube">
         <!-- Front - For Individuals and Families -->
-        <div class="face rec-prism-front">
+        <div class="service-face service-front">
           <div class="service-card">
             <img src="resources/images/background-banner/7.png" />
             <h3>Life Insurance</h3>
@@ -293,7 +273,7 @@
         </div>
 
         <!-- Right - For Business and Corporate Clients -->
-        <div class="face rec-prism-right">
+        <div class="service-face service-right">
           <div class="service-card">
             <img src="resources/images/background-banner/13.png" />
             <h3>Customized HMO & Medical Insurance Plan</h3>
@@ -321,30 +301,26 @@
 
   <!-- JavaScript -->
   <script>
-    const prism = document.querySelector(".rec-prism");
-    const aboutItems = document.querySelectorAll(".about-list li");
+    const cube = document.querySelector(".service-cube");
+    const navItems = document.querySelectorAll(".service-nav li");
 
     function setActive(index) {
-      aboutItems.forEach((item, i) => {
-        if (i === index) {
-          item.classList.add("active");
-        } else {
-          item.classList.remove("active");
-        }
+      navItems.forEach((item, i) => {
+        item.classList.toggle("active", i === index);
       });
     }
 
     function showFront() {
-      prism.style.transform = "translateZ(-625px) rotateY(0deg)";
+      cube.style.transform = "translateZ(-750px) rotateY(0deg)";
       setActive(0);
     }
 
     function showRight() {
-      prism.style.transform = "translateZ(-625px) rotateY(-90deg)";
+      cube.style.transform = "translateZ(-750px) rotateY(-90deg)";
       setActive(1);
     }
 
-    // Optionally, set default active on load
+    // Set default active on load
     setActive(0);
   </script>
 </body>
