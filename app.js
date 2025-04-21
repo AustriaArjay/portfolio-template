@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         easing: 'ease-out',
     });
 
-    ScrollReveal().reveal('.maxicare-plan2, .maxicare-plan1, .why-content, .faq-item, .service-face, .consultation-container', {
+    ScrollReveal().reveal('.maxicare-plan2, .maxicare-plan1, .why-container, .faq-item, .service-face, .consultation-container', {
         origin: 'bottom',
         distance: '300px',
         duration: 1000,

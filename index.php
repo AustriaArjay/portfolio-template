@@ -26,6 +26,7 @@
 
         <!-- Custom Styles -->
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="responsive.css">
 
         <!-- Swiper.js Styles -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
@@ -41,36 +42,6 @@
     </head>
 
     <body>
-        <!-- <nav>
-            <div class="nav__container">
-                <div id="nav-toggle" class="nav__toggle">
-                    <img src="resources/brand.png">
-                    <a class="logo">InsuranceGuyPH</a>
-                </div>`
-                <div id="nav-menu" class="nav__menu">`
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#maxicare">Maxicare Plans</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#assurance">Assurance</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#footer">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
         <nav>
         <div class="nav__container">
             <div class="nav__brand">
@@ -110,13 +81,34 @@
                 <a href="#footer"><i class="fa-brands fa-get-pocket"></i> Get a Free Consultation</a>
             </div>
             </div>
-            <!-- <div class="carousel-item" style="background-image: url('resources/backgrounds/1.png');">
+            <div class="carousel-item" style="background-image: url('resources/backgrounds/1.png');">
             <div class="carousel-caption1">
                 <h1>Protect<br> What Matters Most</h1>
                 <p>Custom Insurance Plans Just for You</p>
                 <a href="#footer"><i class="fa-brands fa-get-pocket"></i> Get a Free Consultation</a>
             </div>
-            </div> -->
+            </div>
+            <div class="carousel-item" style="background-image: url('resources/backgrounds/2.png');">
+            <div class="carousel-caption1">
+                <h1>Secure Your Future with <br>Gabino Cunada</h1>
+                <p>Trusted Financial Advisor | Helping Filipinos & <br>Businesses Build Wealth & Protection</p>
+                <a href="#footer"><i class="fa-brands fa-get-pocket"></i> Get a Free Consultation</a>
+            </div>  
+            </div>
+            <div class="carousel-item" style="background-image: url('resources/backgrounds/3.png');">
+            <div class="carousel-caption2">
+                <h1>Plan Smart <br>Invest Wise</h1>
+                <p>Live Secure With Gabino Cunada by Your Side</p>
+                <a href="#footer"><i class="fa-brands fa-get-pocket"></i> Get a Free Consultation</a>
+            </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('resources/backgrounds/1.png');">
+            <div class="carousel-caption1">
+                <h1>Protect<br> What Matters Most</h1>
+                <p>Custom Insurance Plans Just for You</p>
+                <a href="#footer"><i class="fa-brands fa-get-pocket"></i> Get a Free Consultation</a>
+            </div>
+            </div>
         </div>
 
         <!-- Controls -->
@@ -130,9 +122,11 @@
             <div class="about__content">
                 <h1>Get to Know InsuranceGuyPH</h1>
                 <div class="about__description">
-                    
                     <div class="about__card">
-                        <h3>Goal:</h3>
+                        <h3>
+                            <i class="fas fa-bullseye"></i>
+                            Goal:
+                        </h3>
                         <p>
                             To become the trusted and go-to expert for health, life, and property insurance, 
                             delivering exceptional service that makes every client feel valued, prioritized, 
@@ -140,7 +134,10 @@
                         </p>
                     </div>
                     <div class="about__card">
-                        <h3>Mission:</h3>
+                        <h3>
+                            <i class="fas fa-list-check"></i>
+                            Mission:
+                        </h3>
                         <p>
                             To provide consistent, high-quality, and personalized client service, ensuring 
                             that every individual receives thebest insurance solutions tailored to their unique 
@@ -148,7 +145,10 @@
                         </p>
                     </div>
                     <div class="about__card">
-                        <h3>Vision:</h3>
+                        <h3>
+                            <i class="fas fa-eye"></i>
+                            Vision:
+                        </h3>
                         <p>
                             To be recognized as the leading authority and most reliable financial advisor in the 
                             Philippines for all things insurance-setting the standard for excellence, trust, and 
@@ -157,16 +157,24 @@
                     </div>    
                 </div>  
             </div>
+            <div class="about__profile">
+                    <img src="resources/gabino-cunada.png">
+                    <img src="resources/about-icons/1.png">
+                    <img src="resources/about-icons/2.png">
+                    <img src="resources/about-icons/3.png">
+                    <img src="resources/about-icons/4.png">
+            </div>
+            
         </section>
 
         <!-- Services Section -->
         <section id="services" class="section">
             <h1>Helping You Every Step of the Way</h1>
-            <p>
+            <!-- <p>
             Whether you're an individual looking to secure your family's future or a business aiming to support 
             your employees' financial well-being, I'm here to provide tailored solutions that meet your unique 
             needs, guiding you every step of the way towards financial stability and success.
-            </p>
+            </p> -->
 
             <!-- Navigation for Services -->
             <ul class="service-nav">
@@ -376,7 +384,7 @@
                                         <img src="resources/profile.png">
                                     </div>
                                     <div>
-                                        <p> ABC Corp</p>
+                                        <p> ABC Corp </p>
                                         <span> HR Manager </span>
                                     </div>
                                     <div>
@@ -415,8 +423,8 @@
                             </div>
                         </div>    
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
 
               <!-- FAQs Section -->
@@ -556,11 +564,6 @@
                         </a>
                         <a 
                             class="fab fa-tiktok"
-                            target="_blank" 
-                            href="https://www.tiktok.com/@insurance_guyph">
-                        </a>
-                        <a 
-                            class="fab fa-linked-in"
                             target="_blank" 
                             href="https://www.tiktok.com/@insurance_guyph">
                         </a>
